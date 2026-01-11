@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/art-therapie", label: "L'Art-Th\u00e9rapie" },
-  { href: "/a-propos", label: "\u00c0 Propos" },
+  { href: "/art-therapie", label: "L'Art-Thérapie" },
+  { href: "/a-propos", label: "À Propos" },
   { href: "/prestations", label: "Prestations" },
-  { href: "/temoignages", label: "T\u00e9moignages" },
+  { href: "/temoignages", label: "Témoignages" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -24,7 +24,7 @@ export default function Navigation() {
           <Link to="/" className="flex items-center gap-3 group">
             <img
               src="/assets/Logo_VF2.jpeg"
-              alt="Atelier Cr\u00e9art-Th\u00e9rapie"
+              alt="Atelier Créart-Thérapie"
               className="h-14 w-auto rounded-lg shadow-sm transition-transform duration-300 group-hover:scale-105"
             />
             <div className="hidden sm:block">
@@ -32,7 +32,7 @@ export default function Navigation() {
                 Atelier
               </span>
               <span className="block font-handwritten text-lg text-magenta -mt-1">
-                Cr\u00e9art-Th\u00e9rapie
+                Créart-Thérapie
               </span>
             </div>
           </Link>

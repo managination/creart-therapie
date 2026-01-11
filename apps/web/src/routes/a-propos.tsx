@@ -19,7 +19,7 @@ function AProposPage() {
             {/* Content */}
             <div>
               <span className="font-handwritten text-2xl text-magenta mb-4 block">
-                \u00c0 propos
+                À propos
               </span>
               <h1 className="mb-6">
                 Monique Roon
@@ -28,8 +28,8 @@ function AProposPage() {
                 "Accoucheuse d'artistes"
               </p>
               <p className="text-lg text-warm-gray leading-relaxed">
-                Art-th\u00e9rapeute passionn\u00e9e, j'accompagne les personnes en difficult\u00e9
-                sur le chemin de la transformation par la cr\u00e9ation artistique.
+                Art-thérapeute passionnée, j'accompagne les personnes en difficulté
+                sur le chemin de la transformation par la création artistique.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ function AProposPage() {
               <div className="relative organic-mask overflow-hidden">
                 <img
                   src="/assets/P1044865.JPG"
-                  alt="Monique Roon - Art-th\u00e9rapeute"
+                  alt="Monique Roon - Art-thérapeute"
                   className="w-full h-auto object-cover aspect-square"
                 />
               </div>
@@ -66,16 +66,16 @@ function AProposPage() {
 
               <div className="prose prose-lg max-w-none text-warm-gray">
                 <p className="text-xl leading-relaxed mb-6">
-                  En 2007, suite \u00e0 une p\u00e9riode difficile, j'ai d\u00e9couvert l'art-th\u00e9rapie
-                  qui m'a permis de me reconstruire tout en d\u00e9couvrant ma cr\u00e9ativit\u00e9.
+                  En 2007, suite à une période difficile, j'ai découvert l'art-thérapie
+                  qui m'a permis de me reconstruire tout en découvrant ma créativité.
                 </p>
                 <p className="leading-relaxed mb-6">
-                  Cette exp\u00e9rience transformatrice m'a convaincue de la puissance
-                  de l'expression artistique comme outil de gu\u00e9rison et de
-                  d\u00e9veloppement personnel.
+                  Cette expérience transformatrice m'a convaincue de la puissance
+                  de l'expression artistique comme outil de guérison et de
+                  développement personnel.
                 </p>
                 <p className="leading-relaxed">
-                  Aujourd'hui, je mets cette exp\u00e9rience au service des personnes
+                  Aujourd'hui, je mets cette expérience au service des personnes
                   qui traversent des moments difficiles, les accompagnant avec
                   bienveillance sur leur propre chemin de transformation.
                 </p>
@@ -87,22 +87,22 @@ function AProposPage() {
               <div className="relative pl-8 border-l-2 border-cyan/30">
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-cyan rounded-full" />
                 <p className="font-handwritten text-lg text-cyan mb-1">2007</p>
-                <p className="text-charcoal font-medium">D\u00e9couverte de l'art-th\u00e9rapie</p>
-                <p className="text-sm text-warm-gray">Exp\u00e9rience personnelle transformatrice</p>
+                <p className="text-charcoal font-medium">Découverte de l'art-thérapie</p>
+                <p className="text-sm text-warm-gray">Expérience personnelle transformatrice</p>
               </div>
 
               <div className="relative pl-8 border-l-2 border-magenta/30">
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-magenta rounded-full" />
                 <p className="font-handwritten text-lg text-magenta mb-1">2010</p>
                 <p className="text-charcoal font-medium">Formation certifiante</p>
-                <p className="text-sm text-warm-gray">Dipl\u00f4me d'art-th\u00e9rapeute</p>
+                <p className="text-sm text-warm-gray">Diplôme d'art-thérapeute</p>
               </div>
 
               <div className="relative pl-8 border-l-2 border-purple/30">
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-purple rounded-full" />
                 <p className="font-handwritten text-lg text-purple mb-1">Aujourd'hui</p>
                 <p className="text-charcoal font-medium">Pratique en cabinet</p>
-                <p className="text-sm text-warm-gray">R\u00e9gion de Fribourg</p>
+                <p className="text-sm text-warm-gray">Région de Fribourg</p>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@ function AProposPage() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 mt-2 bg-magenta rounded-full" />
-                  <p className="text-warm-gray">Form\u00e9e en 2010 \u00e0 l'art-th\u00e9rapie</p>
+                  <p className="text-warm-gray">Formée en 2010 à l'art-thérapie</p>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 mt-2 bg-magenta rounded-full" />
@@ -133,7 +133,7 @@ function AProposPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 mt-2 bg-magenta rounded-full" />
-                  <p className="text-warm-gray">Formation continue r\u00e9guli\u00e8re</p>
+                  <p className="text-warm-gray">Formation continue régulière</p>
                 </li>
               </ul>
             </div>
@@ -144,7 +144,7 @@ function AProposPage() {
                 <div className="w-16 h-16 bg-purple/10 rounded-full flex items-center justify-center">
                   <Sparkles className="w-8 h-8 text-purple" />
                 </div>
-                <h3 className="text-2xl">Exp\u00e9rience</h3>
+                <h3 className="text-2xl">Expérience</h3>
               </div>
 
               <ul className="space-y-4">
@@ -154,7 +154,7 @@ function AProposPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 mt-2 bg-purple rounded-full" />
-                  <p className="text-warm-gray">Ateliers en \u00e9tablissements scolaires</p>
+                  <p className="text-warm-gray">Ateliers en établissements scolaires</p>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 mt-2 bg-purple rounded-full" />
@@ -178,13 +178,13 @@ function AProposPage() {
 
           <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-xl">
             <p className="text-xl text-charcoal leading-relaxed mb-6">
-              Mon r\u00f4le est de vous accompagner pour reconnecter avec votre
-              \u00e9nergie vitale. Je cr\u00e9e un espace s\u00e9curisant o\u00f9 vous pouvez explorer
-              vos \u00e9motions et votre cr\u00e9ativit\u00e9 sans jugement.
+              Mon rôle est de vous accompagner pour reconnecter avec votre
+              énergie vitale. Je crée un espace sécurisant où vous pouvez explorer
+              vos émotions et votre créativité sans jugement.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed">
               Ensemble, nous utilisons les outils artistiques comme pont vers
-              votre monde int\u00e9rieur. Pas besoin de talent artistique \u2014
+              votre monde intérieur. Pas besoin de talent artistique —
               seule compte votre envie d'explorer et de vous exprimer.
             </p>
           </div>
@@ -198,7 +198,7 @@ function AProposPage() {
             <span className="font-handwritten text-2xl text-magenta mb-4 block">
               L'atelier
             </span>
-            <h2>Un espace de cr\u00e9ation</h2>
+            <h2>Un espace de création</h2>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -212,7 +212,7 @@ function AProposPage() {
             <div className="rounded-2xl overflow-hidden aspect-square">
               <img
                 src="/assets/P1055567.jpg"
-                alt="Mat\u00e9riel artistique"
+                alt="Matériel artistique"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>

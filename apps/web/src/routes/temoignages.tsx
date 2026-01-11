@@ -14,37 +14,37 @@ const testimonials: Array<{
   color: TestimonialColor;
 }> = [
   {
-    quote: "Elle a \u00e9t\u00e9 une bouff\u00e9e d'oxyg\u00e8ne pour moi... Mme Roon a fait les cr\u00e9ations avec moi, me prenant la main.",
+    quote: "Elle a été une bouffée d'oxygène pour moi... Mme Roon a fait les créations avec moi, me prenant la main.",
     author: "Roxane B.",
-    context: "S\u00e9ances individuelles",
+    context: "Séances individuelles",
     color: "cyan",
   },
   {
-    quote: "J'ai pu contacter la joie, le plaisir de cr\u00e9er, sans avoir besoin de faire du beau. Je suis devenue tr\u00e8s cr\u00e9ative et je sais que je cr\u00e9e ma vie.",
+    quote: "J'ai pu contacter la joie, le plaisir de créer, sans avoir besoin de faire du beau. Je suis devenue très créative et je sais que je crée ma vie.",
     author: "Fabienne H.",
     context: "Accompagnement sur plusieurs mois",
     color: "magenta",
   },
   {
-    quote: "Un espace de libert\u00e9 o\u00f9 j'ai pu d\u00e9poser mes peurs et mes doutes. Monique m'a accompagn\u00e9e avec une grande bienveillance.",
+    quote: "Un espace de liberté où j'ai pu déposer mes peurs et mes doutes. Monique m'a accompagnée avec une grande bienveillance.",
     author: "Marie-Claire D.",
-    context: "P\u00e9riode de transition professionnelle",
+    context: "Période de transition professionnelle",
     color: "purple",
   },
   {
-    quote: "Les ateliers de groupe sont un moment de partage unique. J'y ai trouv\u00e9 une communaut\u00e9 bienveillante et un nouveau moyen d'expression.",
+    quote: "Les ateliers de groupe sont un moment de partage unique. J'y ai trouvé une communauté bienveillante et un nouveau moyen d'expression.",
     author: "Sylvie M.",
     context: "Ateliers de groupe",
     color: "yellow",
   },
   {
-    quote: "Apr\u00e8s mon burn-out, l'art-th\u00e9rapie m'a permis de me reconnecter \u00e0 moi-m\u00eame. Je recommande vivement.",
+    quote: "Après mon burn-out, l'art-thérapie m'a permis de me reconnecter à moi-même. Je recommande vivement.",
     author: "Jean-Pierre L.",
-    context: "Reconstruction apr\u00e8s burn-out",
+    context: "Reconstruction après burn-out",
     color: "cyan",
   },
   {
-    quote: "Monique a cette capacit\u00e9 rare de cr\u00e9er un espace s\u00e9curisant o\u00f9 l'on peut vraiment laisser parler ses \u00e9motions.",
+    quote: "Monique a cette capacité rare de créer un espace sécurisant où l'on peut vraiment laisser parler ses émotions.",
     author: "Isabelle R.",
     context: "Accompagnement dans le deuil",
     color: "magenta",
@@ -74,13 +74,13 @@ function TemoignagesPage() {
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="font-handwritten text-2xl text-purple mb-4 block">
-            T\u00e9moignages
+            Témoignages
           </span>
           <h1 className="mb-6">
             Ce qu'ils en <span className="paint-underline">disent</span>
           </h1>
           <p className="text-xl text-warm-gray max-w-2xl mx-auto">
-            D\u00e9couvrez les exp\u00e9riences de personnes qui ont trouv\u00e9 dans l'art-th\u00e9rapie
+            Découvrez les expériences de personnes qui ont trouvé dans l'art-thérapie
             un chemin vers la transformation.
           </p>
         </div>
@@ -115,13 +115,13 @@ function TemoignagesPage() {
 
             <blockquote>
               <p className="text-3xl md:text-4xl font-display italic text-charcoal leading-relaxed mb-8">
-                La cr\u00e9ativit\u00e9 n'est pas un talent r\u00e9serv\u00e9 \u00e0 quelques-uns,
-                c'est une \u00e9nergie vitale qui sommeille en chacun de nous.
+                La créativité n'est pas un talent réservé à quelques-uns,
+                c'est une énergie vitale qui sommeille en chacun de nous.
               </p>
             </blockquote>
 
             <p className="font-handwritten text-xl text-magenta">
-              \u2014 Monique Roon
+              — Monique Roon
             </p>
           </div>
         </div>
@@ -137,14 +137,14 @@ function TemoignagesPage() {
                 <div className="rounded-2xl overflow-hidden aspect-square">
                   <img
                     src="/assets/91c512c2d597763ae30ffcc3657c22a4.jpg"
-                    alt="Cr\u00e9ation artistique"
+                    alt="Création artistique"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                   <img
                     src="/assets/P1044871.JPG"
-                    alt="Processus cr\u00e9atif"
+                    alt="Processus créatif"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -170,25 +170,25 @@ function TemoignagesPage() {
             {/* Content */}
             <div>
               <span className="font-handwritten text-2xl text-cyan mb-4 block">
-                L'exp\u00e9rience
+                L'expérience
               </span>
-              <h2 className="mb-6">Plus qu'une th\u00e9rapie, un voyage</h2>
+              <h2 className="mb-6">Plus qu'une thérapie, un voyage</h2>
               <p className="text-lg text-warm-gray leading-relaxed mb-6">
-                Chaque s\u00e9ance est une invitation \u00e0 explorer votre monde int\u00e9rieur
-                \u00e0 travers le langage universel de l'art. Pas besoin de savoir dessiner
-                ou peindre \u2014 seule compte l'intention de vous exprimer.
+                Chaque séance est une invitation à explorer votre monde intérieur
+                à travers le langage universel de l'art. Pas besoin de savoir dessiner
+                ou peindre — seule compte l'intention de vous exprimer.
               </p>
               <p className="text-lg text-warm-gray leading-relaxed mb-8">
-                Les t\u00e9moignages ci-dessus refl\u00e8tent des parcours uniques, mais tous
-                partagent un point commun : la d\u00e9couverte d'une nouvelle fa\u00e7on de
-                communiquer avec soi-m\u00eame.
+                Les témoignages ci-dessus reflètent des parcours uniques, mais tous
+                partagent un point commun : la découverte d'une nouvelle façon de
+                communiquer avec soi-même.
               </p>
 
               <Link
                 to="/art-therapie"
                 className="inline-flex items-center gap-2 font-medium text-cyan hover:text-cyan-dark transition-colors"
               >
-                En savoir plus sur l'art-th\u00e9rapie
+                En savoir plus sur l'art-thérapie
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -200,10 +200,10 @@ function TemoignagesPage() {
       <section className="py-24 bg-gradient-to-r from-cyan via-purple to-magenta">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-white mb-6">
-            Pr\u00eat\u00b7e \u00e0 \u00e9crire votre histoire ?
+            Prêt·e à écrire votre histoire ?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Chaque t\u00e9moignage commence par une premi\u00e8re s\u00e9ance.
+            Chaque témoignage commence par une première séance.
             Osez faire le premier pas vers votre transformation.
           </p>
           <Link

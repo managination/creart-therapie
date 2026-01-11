@@ -13,11 +13,11 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
   head: () => ({
     meta: [
       {
-        title: "Atelier Cr\u00e9art-Th\u00e9rapie | Art-th\u00e9rapie \u00e0 Fribourg",
+        title: "Atelier Créart-Thérapie | Art-thérapie à Fribourg",
       },
       {
         name: "description",
-        content: "D\u00e9couvrez l'art-th\u00e9rapie avec Monique Roon \u00e0 Fribourg. S\u00e9ances individuelles et ateliers de groupe pour adultes. Agr\u00e9\u00e9e ASCA.",
+        content: "Découvrez l'art-thérapie avec Monique Roon à Fribourg. Séances individuelles et ateliers de groupe pour adultes. Agréée ASCA.",
       },
     ],
     links: [

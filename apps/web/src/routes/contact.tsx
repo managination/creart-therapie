@@ -68,8 +68,8 @@ function ContactPage() {
             Prenons <span className="paint-underline">contact</span>
           </h1>
           <p className="text-xl text-warm-gray max-w-2xl mx-auto">
-            Une question ? Envie de r\u00e9server une s\u00e9ance ?
-            N'h\u00e9sitez pas \u00e0 me contacter.
+            Une question ? Envie de réserver une séance ?
+            N'hésitez pas à me contacter.
           </p>
         </div>
       </section>
@@ -104,7 +104,7 @@ function ContactPage() {
                     <Phone className="w-6 h-6 text-magenta" />
                   </div>
                   <div>
-                    <p className="font-medium text-charcoal">T\u00e9l\u00e9phone</p>
+                    <p className="font-medium text-charcoal">Téléphone</p>
                     <p className="text-warm-gray">+41 78 842 14 92</p>
                   </div>
                 </a>
@@ -115,7 +115,7 @@ function ContactPage() {
                   </div>
                   <div>
                     <p className="font-medium text-charcoal">Localisation</p>
-                    <p className="text-warm-gray">R\u00e9gion de Fribourg, Suisse</p>
+                    <p className="text-warm-gray">Région de Fribourg, Suisse</p>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ function ContactPage() {
 
                 <div className="bg-magenta/5 rounded-2xl p-6">
                   <Sparkles className="w-8 h-8 text-magenta mb-4" />
-                  <h4 className="font-display text-lg mb-2">S\u00e9ance d'essai</h4>
+                  <h4 className="font-display text-lg mb-2">Séance d'essai</h4>
                   <p className="text-sm text-warm-gray">
                     90 CHF (au lieu de 120)<br />
                     75 minutes
@@ -145,10 +145,10 @@ function ContactPage() {
               <div className="mt-8 p-6 bg-paper-cream rounded-2xl">
                 <div className="flex items-center gap-3 mb-3">
                   <Check className="w-6 h-6 text-cyan" />
-                  <span className="font-medium text-charcoal">Agr\u00e9\u00e9e ASCA</span>
+                  <span className="font-medium text-charcoal">Agréée ASCA</span>
                 </div>
                 <p className="text-sm text-warm-gray">
-                  Remboursement par la plupart des assurances compl\u00e9mentaires suisses.
+                  Remboursement par la plupart des assurances complémentaires suisses.
                 </p>
               </div>
             </div>
@@ -160,16 +160,16 @@ function ContactPage() {
                   <div className="w-20 h-20 bg-cyan/10 rounded-full flex items-center justify-center mb-6">
                     <Check className="w-10 h-10 text-cyan" />
                   </div>
-                  <h3 className="text-2xl mb-4">Message envoy\u00e9 !</h3>
+                  <h3 className="text-2xl mb-4">Message envoyé !</h3>
                   <p className="text-warm-gray max-w-sm">
-                    Merci pour votre message. Je vous r\u00e9pondrai dans les plus brefs d\u00e9lais.
+                    Merci pour votre message. Je vous répondrai dans les plus brefs délais.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">
-                      Nom & Pr\u00e9nom *
+                      Nom & Prénom *
                     </label>
                     <input
                       type="text"
@@ -201,7 +201,7 @@ function ContactPage() {
                     </div>
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-charcoal mb-2">
-                        T\u00e9l\u00e9phone
+                        Téléphone
                       </label>
                       <input
                         type="tel"
@@ -226,11 +226,11 @@ function ContactPage() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-border bg-paper focus:border-cyan focus:ring-2 focus:ring-cyan/20 transition-colors"
                     >
-                      <option value="seance-essai">S\u00e9ance d'essai</option>
-                      <option value="seance-individuelle">S\u00e9ance individuelle</option>
+                      <option value="seance-essai">Séance d'essai</option>
+                      <option value="seance-individuelle">Séance individuelle</option>
                       <option value="atelier-groupe">Atelier de groupe</option>
                       <option value="institution">Intervention en institution</option>
-                      <option value="question">Question g\u00e9n\u00e9rale</option>
+                      <option value="question">Question générale</option>
                       <option value="autre">Autre</option>
                     </select>
                   </div>
@@ -247,7 +247,7 @@ function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-xl border border-border bg-paper focus:border-cyan focus:ring-2 focus:ring-cyan/20 transition-colors resize-none"
-                      placeholder="D\u00e9crivez votre demande..."
+                      placeholder="Décrivez votre demande..."
                     />
                   </div>
 
@@ -270,7 +270,7 @@ function ContactPage() {
                   </button>
 
                   <p className="text-xs text-warm-gray text-center">
-                    * Champs obligatoires. Vos donn\u00e9es sont trait\u00e9es de mani\u00e8re confidentielle.
+                    * Champs obligatoires. Vos données sont traitées de manière confidentielle.
                   </p>
                 </form>
               )}
@@ -283,9 +283,9 @@ function ContactPage() {
       <section className="py-24 bg-paper-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2>O\u00f9 me trouver</h2>
+            <h2>Où me trouver</h2>
             <p className="text-warm-gray mt-4">
-              Je re\u00e7ois en cabinet dans la r\u00e9gion de Fribourg
+              Je reçois en cabinet dans la région de Fribourg
             </p>
           </div>
 
@@ -294,7 +294,7 @@ function ContactPage() {
             <div className="absolute inset-0 bg-gradient-to-br from-cyan/20 via-paper to-magenta/20 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-cyan mx-auto mb-4" />
-                <p className="text-xl font-display text-charcoal">R\u00e9gion de Fribourg</p>
+                <p className="text-xl font-display text-charcoal">Région de Fribourg</p>
                 <p className="text-warm-gray">Suisse</p>
                 <a
                   href="https://maps.google.com/?q=Fribourg,Switzerland"

@@ -22,14 +22,14 @@ function ArtTherapiePage() {
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                 <img
                   src="/assets/P1044871.JPG"
-                  alt="Mains cr\u00e9ant une oeuvre d'art"
+                  alt="Mains créant une oeuvre d'art"
                   className="w-full h-auto object-cover aspect-[4/3]"
                 />
               </div>
               {/* Floating quote */}
               <div className="absolute -bottom-8 -right-4 lg:right-8 bg-white rounded-2xl p-6 shadow-xl max-w-xs">
                 <p className="font-handwritten text-lg text-purple">
-                  "La cr\u00e9ation est un acte de libert\u00e9"
+                  "La création est un acte de liberté"
                 </p>
               </div>
             </div>
@@ -37,19 +37,19 @@ function ArtTherapiePage() {
             {/* Content */}
             <div className="order-1 lg:order-2">
               <span className="font-handwritten text-2xl text-cyan mb-4 block">
-                L'Art-Th\u00e9rapie
+                L'Art-Thérapie
               </span>
               <h1 className="mb-6">
-                Poser un regard <span className="paint-underline">diff\u00e9rent</span>
+                Poser un regard <span className="paint-underline">différent</span>
               </h1>
               <p className="text-lg text-warm-gray leading-relaxed mb-6">
-                En laissant de la place \u00e0 votre cr\u00e9ativit\u00e9, vous pourrez poser un regard
-                diff\u00e9rent sur une situation qui vous pr\u00e9occupe, que ce soit une maladie,
-                un deuil, une s\u00e9paration, un \u00e9v\u00e9nement douloureux, une remise en question...
+                En laissant de la place à votre créativité, vous pourrez poser un regard
+                différent sur une situation qui vous préoccupe, que ce soit une maladie,
+                un deuil, une séparation, un événement douloureux, une remise en question...
               </p>
               <p className="text-lg text-warm-gray leading-relaxed">
                 Crayons, pinceaux, craies, argile, papier... favorisent l'expression
-                et ravivent l'\u00e9lan cr\u00e9atif inn\u00e9.
+                et ravivent l'élan créatif inné.
               </p>
             </div>
           </div>
@@ -66,10 +66,10 @@ function ArtTherapiePage() {
             <span className="font-handwritten text-2xl text-magenta mb-4 block">
               Ma philosophie
             </span>
-            <h2>Le processus, pas le r\u00e9sultat</h2>
+            <h2>Le processus, pas le résultat</h2>
             <p className="mt-6 text-lg text-warm-gray">
-              En art-th\u00e9rapie, ce qui compte n'est pas la beaut\u00e9 de l'\u0153uvre finale,
-              mais le chemin parcouru pendant la cr\u00e9ation.
+              En art-thérapie, ce qui compte n'est pas la beauté de l'œuvre finale,
+              mais le chemin parcouru pendant la création.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ function ArtTherapiePage() {
               </div>
               <h4 className="text-lg font-display font-semibold mb-3">Expression</h4>
               <p className="text-warm-gray">
-                Lib\u00e9rez vos \u00e9motions \u00e0 travers la cr\u00e9ation artistique sans jugement
+                Libérez vos émotions à travers la création artistique sans jugement
               </p>
             </div>
 
@@ -91,7 +91,7 @@ function ArtTherapiePage() {
               </div>
               <h4 className="text-lg font-display font-semibold mb-3">Conscience</h4>
               <p className="text-warm-gray">
-                Prenez conscience de vos ressources int\u00e9rieures et de votre potentiel
+                Prenez conscience de vos ressources intérieures et de votre potentiel
               </p>
             </div>
 
@@ -101,7 +101,7 @@ function ArtTherapiePage() {
               </div>
               <h4 className="text-lg font-display font-semibold mb-3">Bienveillance</h4>
               <p className="text-warm-gray">
-                Un espace s\u00e9curisant et non-jugeant pour vous accompagner
+                Un espace sécurisant et non-jugeant pour vous accompagner
               </p>
             </div>
 
@@ -111,7 +111,7 @@ function ArtTherapiePage() {
               </div>
               <h4 className="text-lg font-display font-semibold mb-3">Transformation</h4>
               <p className="text-warm-gray">
-                Transformez votre regard sur les difficult\u00e9s de la vie
+                Transformez votre regard sur les difficultés de la vie
               </p>
             </div>
           </div>
@@ -134,11 +134,11 @@ function ArtTherapiePage() {
             <div>
               <blockquote className="quote-artistic">
                 <p className="text-2xl font-display italic text-charcoal leading-relaxed mb-6">
-                  La cr\u00e9ation d'une chose nouvelle n'est pas accomplie par l'intellect
-                  mais par l'instinct du jeu agissant par n\u00e9cessit\u00e9 int\u00e9rieure.
+                  La création d'une chose nouvelle n'est pas accomplie par l'intellect
+                  mais par l'instinct du jeu agissant par nécessité intérieure.
                 </p>
                 <footer className="font-medium text-warm-gray">
-                  \u2014 C.G. Jung
+                  — C.G. Jung
                 </footer>
               </blockquote>
             </div>
@@ -153,17 +153,17 @@ function ArtTherapiePage() {
             <span className="font-handwritten text-2xl text-cyan mb-4 block">
               Pour qui ?
             </span>
-            <h2>L'art-th\u00e9rapie peut vous aider si...</h2>
+            <h2>L'art-thérapie peut vous aider si...</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Vous traversez une p\u00e9riode difficile",
-              "Vous vivez un deuil ou une s\u00e9paration",
+              "Vous traversez une période difficile",
+              "Vous vivez un deuil ou une séparation",
               "Vous souffrez d'une maladie chronique",
-              "Vous ressentez du stress ou de l'anxi\u00e9t\u00e9",
-              "Vous \u00eates en qu\u00eate de sens",
-              "Vous souhaitez renouer avec votre cr\u00e9ativit\u00e9",
+              "Vous ressentez du stress ou de l'anxiété",
+              "Vous êtes en quête de sens",
+              "Vous souhaitez renouer avec votre créativité",
             ].map((item, index) => (
               <div
                 key={index}
@@ -184,7 +184,7 @@ function ArtTherapiePage() {
             <span className="font-handwritten text-2xl text-magenta mb-4 block">
               Les outils
             </span>
-            <h2>M\u00e9diums artistiques</h2>
+            <h2>Médiums artistiques</h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -215,10 +215,10 @@ function ArtTherapiePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="mb-6">Envie d'essayer ?</h2>
           <p className="text-lg text-warm-gray mb-8">
-            D\u00e9couvrez l'art-th\u00e9rapie lors d'une premi\u00e8re s\u00e9ance \u00e0 tarif r\u00e9duit.
+            Découvrez l'art-thérapie lors d'une première séance à tarif réduit.
           </p>
           <Link to="/contact" className="btn-artistic inline-flex items-center gap-2">
-            R\u00e9server une s\u00e9ance d'essai
+            Réserver une séance d'essai
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

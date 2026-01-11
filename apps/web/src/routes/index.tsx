@@ -20,19 +20,19 @@ function HomePage() {
             {/* Text Content */}
             <div className="animate-fade-in-up">
               <h1 className="text-balance mb-6">
-                <span className="block">Cultive ta cr\u00e9ativit\u00e9</span>
+                <span className="block">Cultive ta créativité</span>
                 <span className="block">et transforme ton</span>
                 <span className="paint-underline">quotidien</span>
                 <span>.</span>
               </h1>
               <p className="text-lg md:text-xl text-warm-gray leading-relaxed mb-8 max-w-xl">
-                L'art-th\u00e9rapie ouvre un espace, un lieu, o\u00f9 vous pourrez contacter
-                votre enfant int\u00e9rieur pour le laisser s'exprimer et lib\u00e9rer son
-                potentiel cr\u00e9atif.
+                L'art-thérapie ouvre un espace, un lieu, où vous pourrez contacter
+                votre enfant intérieur pour le laisser s'exprimer et libérer son
+                potentiel créatif.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/art-therapie" className="btn-artistic inline-flex items-center gap-2">
-                  D\u00e9couvrir l'atelier
+                  Découvrir l'atelier
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
@@ -49,8 +49,8 @@ function HomePage() {
                   <Sparkles className="w-6 h-6 text-cyan" />
                 </div>
                 <div>
-                  <p className="font-medium text-charcoal">Agr\u00e9\u00e9e ASCA</p>
-                  <p className="text-sm text-warm-gray">Rembours\u00e9e par les assurances compl\u00e9mentaires</p>
+                  <p className="font-medium text-charcoal">Agréée ASCA</p>
+                  <p className="text-sm text-warm-gray">Remboursée par les assurances complémentaires</p>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ function HomePage() {
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
                   <img
                     src="/assets/P1055584.jpg"
-                    alt="S\u00e9ance d'art-th\u00e9rapie - cr\u00e9ation artistique"
+                    alt="Séance d'art-thérapie - création artistique"
                     className="w-full h-auto object-cover aspect-[4/5]"
                   />
                   {/* Overlay gradient */}
@@ -92,12 +92,12 @@ function HomePage() {
               Bienvenue
             </span>
             <h2 className="mb-6">
-              Poser un regard <span className="gradient-text">diff\u00e9rent</span>
+              Poser un regard <span className="gradient-text">différent</span>
             </h2>
             <p className="text-lg text-warm-gray leading-relaxed">
-              En laissant de la place \u00e0 votre cr\u00e9ativit\u00e9, vous pourrez poser un regard
-              diff\u00e9rent sur une situation qui vous pr\u00e9occupe, que ce soit une maladie,
-              un deuil, une s\u00e9paration, un \u00e9v\u00e9nement douloureux, une remise en question...
+              En laissant de la place à votre créativité, vous pourrez poser un regard
+              différent sur une situation qui vous préoccupe, que ce soit une maladie,
+              un deuil, une séparation, un événement douloureux, une remise en question...
             </p>
           </div>
 
@@ -111,7 +111,7 @@ function HomePage() {
                 controls
                 className="w-full aspect-video object-cover"
               >
-                Votre navigateur ne supporte pas la lecture vid\u00e9o.
+                Votre navigateur ne supporte pas la lecture vidéo.
               </video>
             </div>
           </div>
@@ -134,9 +134,9 @@ function HomePage() {
               <div className="w-16 h-16 bg-cyan/10 rounded-2xl flex items-center justify-center mb-6">
                 <Heart className="w-8 h-8 text-cyan" />
               </div>
-              <h3 className="text-xl mb-4">S\u00e9ances Individuelles</h3>
+              <h3 className="text-xl mb-4">Séances Individuelles</h3>
               <p className="text-warm-gray leading-relaxed mb-6">
-                Accompagnement individuel des adultes lors de p\u00e9riodes difficiles de leur vie.
+                Accompagnement individuel des adultes lors de périodes difficiles de leur vie.
               </p>
               <div className="flex items-baseline gap-2">
                 <span className="text-2xl font-display font-semibold text-charcoal">120 CHF</span>
@@ -164,9 +164,9 @@ function HomePage() {
               <div className="w-16 h-16 bg-purple/10 rounded-2xl flex items-center justify-center mb-6">
                 <Sparkles className="w-8 h-8 text-purple" />
               </div>
-              <h3 className="text-xl mb-4">Institutions & \u00c9coles</h3>
+              <h3 className="text-xl mb-4">Institutions & Écoles</h3>
               <p className="text-warm-gray leading-relaxed mb-6">
-                Soutien sp\u00e9cialis\u00e9 : maladies auto-immunes, EMS, \u00e9tablissements scolaires.
+                Soutien spécialisé : maladies auto-immunes, EMS, établissements scolaires.
               </p>
               <div className="text-warm-gray">
                 Sur demande
@@ -191,17 +191,17 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <span className="font-handwritten text-2xl text-purple mb-4 block">
-              T\u00e9moignages
+              Témoignages
             </span>
             <h2 className="mb-12">Ce qu'ils en disent</h2>
 
             <blockquote className="relative">
               <p className="text-2xl md:text-3xl font-display italic text-charcoal leading-relaxed mb-8">
-                "Elle a \u00e9t\u00e9 une bouff\u00e9e d'oxyg\u00e8ne pour moi...
-                Mme Roon a fait les cr\u00e9ations avec moi, me prenant la main."
+                "Elle a été une bouffée d'oxygène pour moi...
+                Mme Roon a fait les créations avec moi, me prenant la main."
               </p>
               <footer className="font-medium text-warm-gray">
-                \u2014 Roxane B.
+                — Roxane B.
               </footer>
             </blockquote>
 
@@ -209,7 +209,7 @@ function HomePage() {
               to="/temoignages"
               className="inline-flex items-center gap-2 mt-12 font-medium text-cyan hover:text-cyan-dark transition-colors"
             >
-              Lire plus de t\u00e9moignages
+              Lire plus de témoignages
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
@@ -224,17 +224,17 @@ function HomePage() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-white mb-6">
-            Pr\u00eat\u00b7e \u00e0 commencer votre voyage cr\u00e9atif ?
+            Prêt·e à commencer votre voyage créatif ?
           </h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Offrez-vous une s\u00e9ance d'essai \u00e0 tarif r\u00e9duit pour d\u00e9couvrir l'art-th\u00e9rapie.
+            Offrez-vous une séance d'essai à tarif réduit pour découvrir l'art-thérapie.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/contact"
               className="px-8 py-4 bg-white text-charcoal font-medium rounded-full hover:bg-paper-cream transition-colors shadow-lg"
             >
-              R\u00e9server une s\u00e9ance d'essai \u2014 90 CHF
+              Réserver une séance d'essai — 90 CHF
             </Link>
             <a
               href="tel:+41788421492"
