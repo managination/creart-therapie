@@ -1,9 +1,8 @@
 import { HeadContent, Outlet, createRootRouteWithContext } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import Header from "@/components/header";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 import "../index.css";
 
@@ -14,11 +13,11 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
   head: () => ({
     meta: [
       {
-        title: "web-site",
+        title: "Atelier Cr\u00e9art-Th\u00e9rapie | Art-th\u00e9rapie \u00e0 Fribourg",
       },
       {
         name: "description",
-        content: "web-site is a web application",
+        content: "D\u00e9couvrez l'art-th\u00e9rapie avec Monique Roon \u00e0 Fribourg. S\u00e9ances individuelles et ateliers de groupe pour adultes. Agr\u00e9\u00e9e ASCA.",
       },
     ],
     links: [
@@ -34,18 +33,13 @@ function RootComponent() {
   return (
     <>
       <HeadContent />
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="dark"
-        disableTransitionOnChange
-        storageKey="vite-ui-theme"
-      >
-        <div className="grid grid-rows-[auto_1fr] h-svh">
-          <Header />
+      <div className="min-h-screen flex flex-col">
+        <Navigation />
+        <main className="flex-1">
           <Outlet />
-        </div>
-        <Toaster richColors />
-      </ThemeProvider>
+        </main>
+        <Footer />
+      </div>
       <TanStackRouterDevtools position="bottom-left" />
     </>
   );
