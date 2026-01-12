@@ -107,7 +107,7 @@ function HomePage() {
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan/20 via-purple/20 to-magenta/20 rounded-3xl blur-xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <video
-                src={asset("assets/creart-therapie-demo-seance.mp4")}
+                src={asset("assets/creart-therapie-demo-seance.mov")}
                 poster={asset("assets/pinceau-fond-presentation.jpeg")}
                 controls
                 className="w-full aspect-video object-cover"
