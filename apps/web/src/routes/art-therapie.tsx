@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Palette, Brain, Heart, Leaf } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const Route = createFileRoute("/art-therapie")({
   component: ArtTherapiePage,
@@ -21,7 +22,7 @@ function ArtTherapiePage() {
               <div className="absolute -inset-4 bg-gradient-to-br from-magenta/20 via-cyan/10 to-yellow/20 rounded-[3rem] blur-2xl" />
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/P1044871.JPG"
+                  src={asset("assets/P1044871.JPG")}
                   alt="Mains créant une oeuvre d'art"
                   className="w-full h-auto object-cover aspect-[4/3]"
                 />
@@ -126,7 +127,7 @@ function ArtTherapiePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <img
-                src="/assets/C.G.Jung_citation.jpeg"
+                src={asset("assets/C.G.Jung_citation.jpeg")}
                 alt="Citation de C.G. Jung"
                 className="rounded-2xl shadow-xl w-full"
               />
@@ -189,10 +190,10 @@ function ArtTherapiePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: "Peinture", image: "/assets/91c512c2d597763ae30ffcc3657c22a4.jpg" },
-              { name: "Dessin", image: "/assets/8068fb5a6ec757a39e1b7ea2ffeb3ebc.jpg" },
-              { name: "Modelage", image: "/assets/P1055567.jpg" },
-              { name: "Collage", image: "/assets/bb9807761db53c168f50e82010f77a18.jpg" },
+              { name: "Peinture", image: asset("assets/91c512c2d597763ae30ffcc3657c22a4.jpg") },
+              { name: "Dessin", image: asset("assets/8068fb5a6ec757a39e1b7ea2ffeb3ebc.jpg") },
+              { name: "Modelage", image: asset("assets/P1055567.jpg") },
+              { name: "Collage", image: asset("assets/bb9807761db53c168f50e82010f77a18.jpg") },
             ].map((tool, index) => (
               <div key={index} className="group relative overflow-hidden rounded-2xl aspect-square">
                 <img

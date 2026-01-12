@@ -1,6 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
@@ -23,7 +24,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/assets/Logo_VF2.jpeg"
+              src={asset("assets/Logo_VF2.jpeg")}
               alt="Atelier Créart-Thérapie"
               className="h-14 w-auto rounded-lg shadow-sm transition-transform duration-300 group-hover:scale-105"
             />

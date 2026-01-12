@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
               <img
-                src="/assets/Logo_VF2.jpeg"
+                src={asset("assets/Logo_VF2.jpeg")}
                 alt="Atelier Créart-Thérapie"
                 className="h-16 w-auto rounded-lg"
               />

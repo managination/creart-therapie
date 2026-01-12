@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, GraduationCap, Heart, Sparkles } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const Route = createFileRoute("/a-propos")({
   component: AProposPage,
@@ -38,7 +39,7 @@ function AProposPage() {
               <div className="absolute -inset-6 bg-gradient-to-br from-cyan/20 via-magenta/10 to-purple/20 rounded-full blur-3xl" />
               <div className="relative organic-mask overflow-hidden">
                 <img
-                  src="/assets/P1044865.JPG"
+                  src={asset("assets/P1044865.JPG")}
                   alt="Monique Roon - Art-thérapeute"
                   className="w-full h-auto object-cover aspect-square"
                 />
@@ -204,21 +205,21 @@ function AProposPage() {
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden aspect-square">
               <img
-                src="/assets/P1044847.JPG"
+                src={asset("assets/P1044847.JPG")}
                 alt="L'atelier"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-square">
               <img
-                src="/assets/P1055567.jpg"
+                src={asset("assets/P1055567.jpg")}
                 alt="Matériel artistique"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-square col-span-2 lg:col-span-1">
               <img
-                src="/assets/pinceau-fond-presentation.jpeg"
+                src={asset("assets/pinceau-fond-presentation.jpeg")}
                 alt="Pinceaux"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

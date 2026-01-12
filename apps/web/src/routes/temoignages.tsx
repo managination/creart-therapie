@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const Route = createFileRoute("/temoignages")({
   component: TemoignagesPage,
@@ -136,14 +137,14 @@ function TemoignagesPage() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden aspect-square">
                   <img
-                    src="/assets/91c512c2d597763ae30ffcc3657c22a4.jpg"
+                    src={asset("assets/91c512c2d597763ae30ffcc3657c22a4.jpg")}
                     alt="Création artistique"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                   <img
-                    src="/assets/P1044871.JPG"
+                    src={asset("assets/P1044871.JPG")}
                     alt="Processus créatif"
                     className="w-full h-full object-cover"
                   />
@@ -152,14 +153,14 @@ function TemoignagesPage() {
               <div className="space-y-4 pt-8">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                   <img
-                    src="/assets/8068fb5a6ec757a39e1b7ea2ffeb3ebc.jpg"
+                    src={asset("assets/8068fb5a6ec757a39e1b7ea2ffeb3ebc.jpg")}
                     alt="Texture artistique"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-square">
                   <img
-                    src="/assets/bb9807761db53c168f50e82010f77a18.jpg"
+                    src={asset("assets/bb9807761db53c168f50e82010f77a18.jpg")}
                     alt="Oeuvre d'art"
                     className="w-full h-full object-cover"
                   />

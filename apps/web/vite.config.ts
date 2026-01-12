@@ -5,6 +5,7 @@ import path from "node:path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/creart-therapie/",
   plugins: [tailwindcss(), tanstackRouter({}), react()],
   resolve: {
     alias: {
@@ -13,5 +14,9 @@ export default defineConfig({
   },
   server: {
     port: 3001,
+  },
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
   },
 });

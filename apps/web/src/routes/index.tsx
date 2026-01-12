@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Heart, Users } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -64,7 +65,7 @@ function HomePage() {
                 {/* Main image */}
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
                   <img
-                    src="/assets/P1055584.jpg"
+                    src={asset("assets/P1055584.jpg")}
                     alt="Séance d'art-thérapie - création artistique"
                     className="w-full h-auto object-cover aspect-[4/5]"
                   />
@@ -106,8 +107,8 @@ function HomePage() {
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan/20 via-purple/20 to-magenta/20 rounded-3xl blur-xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <video
-                src="/assets/creart-therapie-demo-seance.mp4"
-                poster="/assets/pinceau-fond-presentation.jpeg"
+                src={asset("assets/creart-therapie-demo-seance.mp4")}
+                poster={asset("assets/pinceau-fond-presentation.jpeg")}
                 controls
                 className="w-full aspect-video object-cover"
               >
@@ -220,7 +221,10 @@ function HomePage() {
       <section className="py-24 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-cyan via-purple to-magenta opacity-90" />
-        <div className="absolute inset-0 bg-[url('/assets/bb9807761db53c168f50e82010f77a18.jpg')] bg-cover bg-center mix-blend-overlay opacity-30" />
+        <div
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30"
+          style={{ backgroundImage: `url(${asset("assets/bb9807761db53c168f50e82010f77a18.jpg")})` }}
+        />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-white mb-6">

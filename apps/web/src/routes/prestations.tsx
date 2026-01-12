@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Heart, Users, Building, Clock, Check, Sparkles } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const Route = createFileRoute("/prestations")({
   component: PrestationsPage,
@@ -13,7 +14,7 @@ function PrestationsPage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src="/assets/P1044847.JPG"
+            src={asset("assets/P1044847.JPG")}
             alt=""
             className="w-full h-full object-cover"
           />
