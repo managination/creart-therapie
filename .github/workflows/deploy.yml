@@ -35,13 +35,22 @@ jobs:
       - name: Copy 404.html for SPA routing
         run: cp apps/web/dist/index.html apps/web/dist/404.html
 
+      - name: Debug - List dist contents
+        run: |
+          echo "=== Contents of apps/web/dist ==="
+          ls -la apps/web/dist/
+          echo "=== Contents of apps/web/dist/assets ==="
+          ls -la apps/web/dist/assets/ | head -20
+          echo "=== index.html content ==="
+          cat apps/web/dist/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/web/dist
+          path: ./apps/web/dist
 
   deploy:
     environment:
