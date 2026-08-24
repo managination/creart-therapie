@@ -1,13 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, Check, Clock, Sparkles } from "lucide-react";
+import { env } from "@web-site/env/web";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
 function ContactPage() {
-  const [formState, setFormState] = useState<"idle" | "sending" | "sent">("idle");
+  const [formState, setFormState] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,13 +21,26 @@ function ContactPage() {
     e.preventDefault();
     setFormState("sending");
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: env.VITE_WEB3FORMS_ACCESS_KEY,
+          ...formData,
+        }),
+      });
 
-    // In production, you would send the form data to your backend
-    console.log("Form submitted:", formData);
-
-    setFormState("sent");
+      const result = await response.json();
+      if (result.success) {
+        setFormState("sent");
+        setFormData({ name: "", email: "", phone: "", subject: "seance-essai", message: "" });
+      } else {
+        setFormState("error");
+      }
+    } catch {
+      setFormState("error");
+    }
   };
 
   const handleChange = (
@@ -167,6 +181,11 @@ function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {formState === "error" && (
+                    <p className="text-sm text-red-600 text-center bg-red-50 rounded-xl p-3">
+                      Une erreur est survenue lors de l'envoi. Veuillez réessayer.
+                    </p>
+                  )}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">
                       Nom & Prénom *
