@@ -40,3 +40,19 @@ web-site/
 - `bun run build`: Build all applications
 - `bun run dev:web`: Start only the web application
 - `bun run check-types`: Check TypeScript types across all apps
+
+## Docker
+
+Build the Docker image locally:
+
+```bash
+docker build -t creart-therapie:local --build-arg VITE_WEB3FORMS_ACCESS_KEY=your_key_here .
+```
+
+Run the Docker container:
+
+```bash
+docker run -d -p 3001:80 --name creart-therapie creart-therapie:local
+```
+
+The site will be accessible at [http://localhost:3001](http://localhost:3001).

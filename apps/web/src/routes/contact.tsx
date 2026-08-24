@@ -289,26 +289,18 @@ function ContactPage() {
             </p>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[2/1]">
-            {/* Placeholder for Google Maps - in production, integrate actual Google Maps */}
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan/20 via-paper to-magenta/20 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-cyan mx-auto mb-4" />
-                <p className="text-xl font-display text-charcoal">Région de Fribourg</p>
-                <p className="text-warm-gray">Suisse</p>
-                <a
-                  href="https://maps.google.com/?q=Fribourg,Switzerland"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 mt-4 text-cyan hover:text-cyan-dark transition-colors"
-                >
-                  Voir sur Google Maps
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+          <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-2/1">
+            <iframe
+              src="https://www.google.com/maps?q=Rte+de+la+Cure+3,+1470+Lully&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localisation - Rte de la Cure 3, 1470 Lully"
+              className="absolute inset-0"
+            />
           </div>
         </div>
       </section>

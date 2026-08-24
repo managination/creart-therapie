@@ -36,7 +36,4 @@ COPY --from=builder /app/apps/web/dist /usr/share/nginx/html
 # Ensure nginx worker (runs as non-root) can read all assets
 RUN chmod -R a+r /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
-
 CMD ["nginx", "-g", "daemon off;"]
