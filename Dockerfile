@@ -30,8 +30,11 @@ RUN rm -rf /etc/nginx/conf.d/default.conf
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy built assets from builder stage
+# Copy built assets from builder stage to nginx root
 COPY --from=builder /app/apps/web/dist /usr/share/nginx/html
+
+# Ensure nginx worker (runs as non-root) can read all assets
+RUN chmod -R a+r /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
