@@ -4,7 +4,11 @@ FROM oven/bun:1.3.5-alpine AS builder
 WORKDIR /app
 
 # Install dependencies first (cached layer)
+# Copy all package.json files so bun can resolve workspace dependencies
 COPY package.json bun.lock ./
+COPY apps/web/package.json ./apps/web/
+COPY packages/config/package.json ./packages/config/
+COPY packages/env/package.json ./packages/env/
 RUN bun install --frozen
 
 # Copy source and build
