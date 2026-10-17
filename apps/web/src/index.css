@@ -13,6 +13,12 @@
   --yellow: #FFEB3B;
   --yellow-light: #FFF59D;
   --yellow-dark: #FBC02D;
+  --vivid-red: #C62828;
+  --vivid-orange: #D84315;
+  --vivid-amber: #F9A825;
+  --vivid-green: #2E7D32;
+  --vivid-teal: #00838F;
+  --vivid-purple: #6A1B9A;
   --purple: #673AB7;
   --purple-light: #9575CD;
   --purple-dark: #512DA8;
@@ -49,6 +55,12 @@
   --font-body: "Source Sans 3", system-ui, sans-serif;
 
   /* Brand colors for Tailwind */
+  --color-vivid-red: var(--vivid-red);
+  --color-vivid-orange: var(--vivid-orange);
+  --color-vivid-amber: var(--vivid-amber);
+  --color-vivid-green: var(--vivid-green);
+  --color-vivid-teal: var(--vivid-teal);
+  --color-vivid-purple: var(--vivid-purple);
   --color-cyan: var(--cyan);
   --color-cyan-light: var(--cyan-light);
   --color-cyan-dark: var(--cyan-dark);

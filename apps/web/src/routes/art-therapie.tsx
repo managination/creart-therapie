@@ -1,12 +1,48 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Palette, Brain, Heart, Leaf } from "lucide-react";
+import { ArrowRight, Palette, Brain, Heart, Leaf, ChevronDown } from "lucide-react";
 import { asset } from "@/lib/assets";
 
 export const Route = createFileRoute("/art-therapie")({
   component: ArtTherapiePage,
 });
 
+const helpItems = [
+  {
+    title: "Vous traversez une dépression, une période de mal-être ou de perte d'élan",
+    description:
+      "Un suivi permet de retrouver ses racines, son centre d'intérêt, trouver un sens à son existence.",
+  },
+  {
+    title: "Vous vivez un deuil ou une séparation",
+    description:
+      "Vous pourrez être accompagné de manière bienveillante à traverser cette épreuve, les étapes du deuil et à représenter vos émotions pour les transformer.",
+  },
+  {
+    title: "Vous souffrez d'un cancer ou d'une maladie chronique",
+    description:
+      "Vous aurez l'occasion de poser un autre regard sur cette maladie et de la traverser autrement.",
+  },
+  {
+    title: "Vous souffrez d'une maladie auto immune, SEP, maladie de parkinson...",
+    description:
+      "La créativité vous permettra d'ouvrir le champ des possibles, de mettre en place un mouvement différent, grâce à l'imaginaire.",
+  },
+  {
+    title: "Votre enfant souffre d'un handicap, TDA, TSA...",
+    description:
+      "Je peux l'accompagner en lui créant un cadre sécurisant, une bulle d'oxygène dans laquelle il pourra libérer sa créativité. J'ai mis en place diverses créations qui ne demandent que quelques minutes et qui ont des résultats surprenants et valorisants.",
+  },
+  {
+    title: "Vous souhaitez renouer avec votre créativité",
+    description:
+      "Si vous ressentez le besoin de créer et que vous aimeriez choisir la matière qui vous convient, je vous ferai découvrir toutes les facettes de ma passion, avec des matières ludiques et créatives.",
+  },
+];
+
 function ArtTherapiePage() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -59,6 +95,63 @@ function ArtTherapiePage() {
 
       {/* Paint divider */}
       <div className="paint-divider" />
+
+      {/* For Whom Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <span className="font-handwritten text-2xl text-cyan mb-4 block">
+              Pour qui ?
+            </span>
+            <h2>L'art-thérapie peut vous aider si vous...</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {helpItems.map((item, index) => {
+              const isOpen = openIndex === index;
+              return (
+                <div
+                  key={index}
+                  className="bg-paper-cream rounded-2xl overflow-hidden"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    className="w-full flex items-start justify-between gap-4 p-6 text-left"
+                    aria-expanded={isOpen}
+                  >
+                    <span
+                      className={`font-handwritten text-2xl ${
+                        ["text-vivid-red", "text-vivid-orange", "text-vivid-amber", "text-vivid-green", "text-vivid-teal", "text-vivid-purple"][
+                          index % 6
+                        ]
+                      }`}
+                    >
+                      {item.title}
+                    </span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-warm-gray flex-shrink-0 transition-transform duration-200 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`grid transition-all duration-300 ease-in-out ${
+                      isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="px-6 pb-6 font-handwritten text-xl text-charcoal">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       {/* Philosophy Section */}
       <section className="py-24 bg-paper-cream">
@@ -143,37 +236,6 @@ function ArtTherapiePage() {
                 </footer>
               </blockquote>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* For Whom Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="font-handwritten text-2xl text-cyan mb-4 block">
-              Pour qui ?
-            </span>
-            <h2>L'art-thérapie peut vous aider si...</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              "Vous traversez une période difficile",
-              "Vous vivez un deuil ou une séparation",
-              "Vous souffrez d'une maladie chronique",
-              "Vous ressentez du stress ou de l'anxiété",
-              "Vous êtes en quête de sens",
-              "Vous souhaitez renouer avec votre créativité",
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-4 p-6 bg-paper-cream rounded-2xl"
-              >
-                <div className="w-3 h-3 mt-2 bg-cyan rounded-full flex-shrink-0" />
-                <p className="text-charcoal">{item}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
