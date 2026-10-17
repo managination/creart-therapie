@@ -36,7 +36,7 @@ function AProposPage() {
               <p className="text-2xl font-display italic text-purple mb-8">
                 "Accoucheuse d'artistes"
               </p>
-              <p className="text-lg text-warm-gray leading-relaxed">
+              <p className="text-[22px] text-warm-gray leading-relaxed">
                 Art-thérapeute passionnée, j'accompagne les personnes en difficulté
                 sur le chemin de la transformation par la création artistique.
               </p>
@@ -65,7 +65,7 @@ function AProposPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
             {/* My Story */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 flex flex-col">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-16 h-16 bg-cyan/10 rounded-full flex items-center justify-center">
                   <Heart className="w-8 h-8 text-cyan" />
@@ -73,14 +73,23 @@ function AProposPage() {
                 <h2 className="text-3xl">Mon Histoire</h2>
               </div>
 
-              <div className="prose prose-lg max-w-none text-warm-gray">
-                <p className="text-xl leading-relaxed mb-6">
-                  En 2007, suite à une période difficile, j'ai découvert l'art-thérapie
-                  qui m'a permis de me reconstruire tout en découvrant ma créativité.
+              <div className="flex-1 flex flex-col justify-between gap-4 text-xl text-warm-gray">
+                <p className="leading-relaxed">
+                  En 2008, suite à une période difficile de ma vie, j'ai
+                  rencontré une art-thérapeute qui m'a fait découvrir l'argile.
                 </p>
-                <p className="leading-relaxed mb-6">
-                  Cette expérience transformatrice m'a convaincue de la puissance
-                  de l'expression artistique comme outil de guérison et de
+                <p className="leading-relaxed">
+                  Cette matière m'a permis de me reconnecter à la terre et de
+                  découvrir mes ressources enfouies. C'est à partir de là que
+                  j'ai décidé de devenir art-thérapeute afin de pouvoir aider
+                  d'autres personnes à retrouver cette petite{" "}
+                  <strong className="text-magenta">étincelle</strong> que je
+                  croyais moi-même avoir perdue.
+                </p>
+                <p className="leading-relaxed">
+                  Cette expérience transformatrice m'a convaincue de la
+                  puissance de l'expression artistique comme{" "}
+                  <strong className="text-cyan">outil de guérison</strong> et de
                   développement personnel.
                 </p>
                 <p className="leading-relaxed">
@@ -92,10 +101,10 @@ function AProposPage() {
             </div>
 
             {/* Timeline */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="relative pl-8 border-l-2 border-cyan/30">
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-cyan rounded-full" />
-                <p className="font-handwritten text-lg text-cyan mb-1">2007</p>
+                <p className="font-handwritten text-lg text-cyan mb-1">2008</p>
                 <p className="text-charcoal font-medium">Découverte de l'art-thérapie</p>
                 <p className="text-sm text-warm-gray">Expérience personnelle transformatrice</p>
               </div>
@@ -104,14 +113,32 @@ function AProposPage() {
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-magenta rounded-full" />
                 <p className="font-handwritten text-lg text-magenta mb-1">2010</p>
                 <p className="text-charcoal font-medium">Formation certifiante</p>
-                <p className="text-sm text-warm-gray">Diplôme d'art-thérapeute</p>
+              </div>
+
+              <div className="relative pl-8 border-l-2 border-yellow/30">
+                <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-yellow rounded-full" />
+                <p className="font-handwritten text-lg text-yellow-dark mb-1">2012</p>
+                <p className="text-charcoal font-medium">Diplôme d'animatrice en atelier d'expression créative</p>
               </div>
 
               <div className="relative pl-8 border-l-2 border-purple/30">
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-purple rounded-full" />
-                <p className="font-handwritten text-lg text-purple mb-1">Aujourd'hui</p>
-                <p className="text-charcoal font-medium">Pratique en cabinet</p>
-                <p className="text-sm text-warm-gray">Région de Fribourg</p>
+                <p className="font-handwritten text-lg text-purple mb-1">2013</p>
+                <p className="text-charcoal font-medium">Diplôme d'art-thérapeute</p>
+              </div>
+
+              <div className="relative pl-8 border-l-2 border-cyan/30">
+                <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-cyan rounded-full" />
+                <p className="font-handwritten text-lg text-cyan mb-1">2019</p>
+                <p className="text-charcoal font-medium">Diplôme d'Anatomie - Physiologie - Pathologie</p>
+                <p className="text-sm text-warm-gray">Reconnaissance ASCA</p>
+              </div>
+
+              <div className="relative pl-8 border-l-2 border-magenta/30">
+                <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] bg-magenta rounded-full" />
+                <p className="font-handwritten text-lg text-magenta mb-1">Aujourd'hui</p>
+                <p className="text-charcoal font-medium">Pratique en cabinet, individuel et groupe et en institutions</p>
+                <p className="text-sm text-warm-gray">Région : Romandie</p>
               </div>
             </div>
           </div>
