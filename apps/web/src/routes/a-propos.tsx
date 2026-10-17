@@ -1,9 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, GraduationCap, Heart, Sparkles } from "lucide-react";
 import { asset } from "@/lib/assets";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/a-propos")({
   component: AProposPage,
+  head: () =>
+    seo({
+      title: "Monique Roon, art-thérapeute à Fribourg | À propos",
+      description:
+        "Art-thérapeute diplômée, Monique Roon accompagne adultes et enfants à Fribourg sur le chemin de la transformation par la création artistique.",
+      path: "/a-propos",
+    }),
 });
 
 function AProposPage() {

@@ -2,9 +2,17 @@ import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Palette, Brain, Heart, Leaf, ChevronDown } from "lucide-react";
 import { asset } from "@/lib/assets";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/art-therapie")({
   component: ArtTherapiePage,
+  head: () =>
+    seo({
+      title: "Qu'est-ce que l'art-thérapie ? | Atelier Créart-Thérapie",
+      description:
+        "L'art-thérapie aide à traverser deuil, maladie, burn-out ou perte de sens par la création. Découvrez cette approche douce avec Monique Roon à Fribourg.",
+      path: "/art-therapie",
+    }),
 });
 
 const helpItems = [

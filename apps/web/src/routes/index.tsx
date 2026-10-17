@@ -1,9 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Heart, Users } from "lucide-react";
 import { asset } from "@/lib/assets";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
+  head: () =>
+    seo({
+      title: "Atelier Créart-Thérapie | Art-thérapie à Fribourg",
+      description:
+        "Atelier d'art-thérapie à Fribourg : séances individuelles et ateliers de groupe avec Monique Roon, art-thérapeute agréée ASCA. Séance d'essai 90 CHF.",
+      path: "/",
+    }),
 });
 
 function HomePage() {
@@ -68,6 +76,8 @@ function HomePage() {
                     src={asset("assets/P1055584.jpg")}
                     alt="Séance d'art-thérapie - création artistique"
                     className="w-full h-auto object-cover aspect-[4/5]"
+                    fetchPriority="high"
+                    decoding="async"
                   />
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
@@ -107,11 +117,13 @@ function HomePage() {
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan/20 via-purple/20 to-magenta/20 rounded-3xl blur-xl" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <video
-                src={asset("assets/creart-therapie-demo-seance.mov")}
                 poster={asset("assets/pinceau-fond-presentation.jpeg")}
                 controls
+                preload="none"
                 className="w-full aspect-video object-cover"
               >
+                <source src={asset("assets/creart-therapie-demo-seance.webm")} type="video/webm" />
+                <source src={asset("assets/creart-therapie-demo-seance.mp4")} type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture vidéo.
               </video>
             </div>

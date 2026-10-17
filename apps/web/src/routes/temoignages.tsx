@@ -1,9 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote } from "lucide-react";
 import { asset } from "@/lib/assets";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/temoignages")({
   component: TemoignagesPage,
+  head: () =>
+    seo({
+      title: "Témoignages | Atelier Créart-Thérapie",
+      description:
+        "Ils ont retrouvé joie de vivre et créativité grâce à l'art-thérapie. Découvrez les témoignages des personnes accompagnées par Monique Roon à Fribourg.",
+      path: "/temoignages",
+    }),
 });
 
 type TestimonialColor = "cyan" | "magenta" | "purple" | "yellow";

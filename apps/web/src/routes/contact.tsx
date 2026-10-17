@@ -2,9 +2,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, Check, Clock, Sparkles } from "lucide-react";
 import { env } from "@web-site/env/web";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   component: ContactPage,
+  head: () =>
+    seo({
+      title: "Contact & rendez-vous | Atelier Créart-Thérapie",
+      description:
+        "Réservez votre séance d'essai d'art-thérapie à Fribourg (90 CHF). Contactez Monique Roon par email ou téléphone, du lundi au vendredi sur rendez-vous.",
+      path: "/contact",
+    }),
 });
 
 function ContactPage() {

@@ -17,6 +17,8 @@ export default function Footer() {
                 src={asset("assets/Logo_VF2.jpeg")}
                 alt="Atelier Créart-Thérapie"
                 className="h-16 w-auto rounded-lg"
+                loading="lazy"
+                decoding="async"
               />
             </Link>
             <p className="text-paper-cream/70 max-w-md leading-relaxed">

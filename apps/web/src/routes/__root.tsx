@@ -10,6 +10,10 @@ export interface RouterAppContext {}
 
 export const Route = createRootRouteWithContext<RouterAppContext>()({
   component: RootComponent,
+  // Fallback head tags — every page route overrides these via its own `head`
+  // (deepest route wins for title/description). Static-only tags (og:*,
+  // twitter:*, icons, JSON-LD) live in index.html and must NOT be set here:
+  // React 19 does not dedupe them against the static ones, causing duplicates.
   head: () => ({
     meta: [
       {
@@ -17,13 +21,7 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
       },
       {
         name: "description",
-        content: "Découvrez l'art-thérapie avec Monique Roon à Fribourg. Séances individuelles et ateliers de groupe pour adultes. Agréée ASCA.",
-      },
-    ],
-    links: [
-      {
-        rel: "icon",
-        href: "/favicon.ico",
+        content: "Atelier d'art-thérapie à Fribourg : séances individuelles et ateliers de groupe avec Monique Roon, art-thérapeute agréée ASCA. Séance d'essai 90 CHF.",
       },
     ],
   }),

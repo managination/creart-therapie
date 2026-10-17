@@ -14,6 +14,7 @@ import { Route as PrestationsRouteImport } from './routes/prestations'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ArtTherapieRouteImport } from './routes/art-therapie'
 import { Route as AProposRouteImport } from './routes/a-propos'
+import { Route as SplatRouteImport } from './routes/$'
 import { Route as IndexRouteImport } from './routes/index'
 
 const TemoignagesRoute = TemoignagesRouteImport.update({
@@ -41,6 +42,11 @@ const AProposRoute = AProposRouteImport.update({
   path: '/a-propos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SplatRoute = SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -49,6 +55,7 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/a-propos': typeof AProposRoute
   '/art-therapie': typeof ArtTherapieRoute
   '/contact': typeof ContactRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/a-propos': typeof AProposRoute
   '/art-therapie': typeof ArtTherapieRoute
   '/contact': typeof ContactRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/a-propos': typeof AProposRoute
   '/art-therapie': typeof ArtTherapieRoute
   '/contact': typeof ContactRoute
@@ -76,6 +85,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/$'
     | '/a-propos'
     | '/art-therapie'
     | '/contact'
@@ -84,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$'
     | '/a-propos'
     | '/art-therapie'
     | '/contact'
@@ -92,6 +103,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/$'
     | '/a-propos'
     | '/art-therapie'
     | '/contact'
@@ -101,6 +113,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SplatRoute: typeof SplatRoute
   AProposRoute: typeof AProposRoute
   ArtTherapieRoute: typeof ArtTherapieRoute
   ContactRoute: typeof ContactRoute
@@ -145,6 +158,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AProposRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/$': {
+      id: '/$'
+      path: '/$'
+      fullPath: '/$'
+      preLoaderRoute: typeof SplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -157,6 +177,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SplatRoute: SplatRoute,
   AProposRoute: AProposRoute,
   ArtTherapieRoute: ArtTherapieRoute,
   ContactRoute: ContactRoute,

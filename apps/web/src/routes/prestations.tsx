@@ -1,9 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Heart, Users, Building, Clock, Check, Sparkles } from "lucide-react";
 import { asset } from "@/lib/assets";
+import { seo } from "@/lib/seo";
 
 export const Route = createFileRoute("/prestations")({
   component: PrestationsPage,
+  head: () =>
+    seo({
+      title: "Prestations & tarifs | Atelier Créart-Thérapie",
+      description:
+        "Séances individuelles d'art-thérapie (120 CHF / 75 min), ateliers de groupe de pointillisme (50 CHF), séance d'essai à 90 CHF. Agréée ASCA, à Fribourg.",
+      path: "/prestations",
+    }),
 });
 
 function PrestationsPage() {
