@@ -112,7 +112,7 @@ function ArtTherapiePage() {
             <span className="font-handwritten text-2xl text-cyan mb-4 block">
               Pour qui ?
             </span>
-            <h2>L'art-thérapie peut vous aider si vous...</h2>
+            <h2>L'art-thérapie peut vous aider si...</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -158,6 +158,36 @@ function ArtTherapiePage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Group Creative Workshop Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <span className="font-handwritten text-2xl text-cyan mb-4 block">
+              Atelier créatif de groupe
+            </span>
+            <h2>Créer ensemble, dans un cadre bienveillant</h2>
+          </div>
+
+          {/* Video Preview */}
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-r from-cyan/20 via-purple/20 to-magenta/20 rounded-3xl blur-xl" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <video
+                poster={asset("assets/pinceau-fond-presentation.jpeg")}
+                controls
+                preload="none"
+                className="w-full aspect-video object-cover"
+                aria-label="Démonstration d'une séance d'art-thérapie à l'atelier Créart-Thérapie"
+              >
+                <source src={asset("assets/creart-therapie-demo-seance.webm")} type="video/webm" />
+                <source src={asset("assets/creart-therapie-demo-seance.mp4")} type="video/mp4" />
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
           </div>
         </div>
       </section>

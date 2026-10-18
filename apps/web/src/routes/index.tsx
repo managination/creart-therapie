@@ -113,21 +113,15 @@ function HomePage() {
             </p>
           </div>
 
-          {/* Video Preview */}
-          <div className="mt-16 relative max-w-4xl mx-auto">
-            <div className="absolute -inset-4 bg-gradient-to-r from-cyan/20 via-purple/20 to-magenta/20 rounded-3xl blur-xl" />
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <video
-                poster={asset("assets/pinceau-fond-presentation.jpeg")}
-                controls
-                preload="none"
-                className="w-full aspect-video object-cover"
-                aria-label="Démonstration d'une séance d'art-thérapie à l'atelier Créart-Thérapie"
-              >
-                <source src={asset("assets/creart-therapie-demo-seance.webm")} type="video/webm" />
-                <source src={asset("assets/creart-therapie-demo-seance.mp4")} type="video/mp4" />
-                Votre navigateur ne supporte pas la lecture vidéo.
-              </video>
+          {/* Image */}
+          <div className="mt-16 relative max-w-3xl mx-auto">
+            <div className="absolute -inset-4 bg-gradient-to-br from-cyan/20 via-magenta/10 to-yellow/20 rounded-[3rem] blur-2xl" />
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
+              <img
+                src={asset("assets/pointillisme-main.png")}
+                alt="Atelier d'art-thérapie : main peignant une œuvre en pointillisme"
+                className="w-full h-auto object-cover aspect-[4/3]"
+              />
             </div>
           </div>
         </div>

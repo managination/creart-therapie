@@ -312,7 +312,7 @@ function ContactPage() {
           <div className="text-center mb-12">
             <h2>Où me trouver</h2>
             <p className="text-warm-gray mt-4">
-              Je reçois en cabinet dans la région de Fribourg
+              Je reçois dans mon atelier à Lully
             </p>
           </div>
 

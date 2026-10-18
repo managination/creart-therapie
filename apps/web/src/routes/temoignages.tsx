@@ -140,40 +140,13 @@ function TemoignagesPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Images */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden aspect-square">
-                  <img
-                    src={asset("assets/91c512c2d597763ae30ffcc3657c22a4.jpg")}
-                    alt="Création artistique"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-                  <img
-                    src={asset("assets/P1044871.JPG")}
-                    alt="Processus créatif"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="space-y-4 pt-8">
-                <div className="rounded-2xl overflow-hidden aspect-[4/3]">
-                  <img
-                    src={asset("assets/8068fb5a6ec757a39e1b7ea2ffeb3ebc.jpg")}
-                    alt="Texture artistique"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="rounded-2xl overflow-hidden aspect-square">
-                  <img
-                    src={asset("assets/bb9807761db53c168f50e82010f77a18.jpg")}
-                    alt="Oeuvre d'art"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+            {/* Image */}
+            <div className="rounded-2xl overflow-hidden aspect-square shadow-2xl">
+              <img
+                src={asset("assets/bb9807761db53c168f50e82010f77a18.jpg")}
+                alt="Oeuvre d'art"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Content */}
