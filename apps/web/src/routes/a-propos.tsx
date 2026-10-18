@@ -9,7 +9,7 @@ export const Route = createFileRoute("/a-propos")({
     seo({
       title: "Monique Roon, art-thérapeute à Fribourg | À propos",
       description:
-        "Art-thérapeute diplômée, Monique Roon accompagne adultes et enfants à Fribourg sur le chemin de la transformation par la création artistique.",
+        "Monique Roon, art-thérapeute diplômée et animatrice en atelier d'expression créative à Fribourg. Accompagnement créatif bienveillant, agréé ASCA.",
       path: "/a-propos",
     }),
 });
@@ -34,11 +34,10 @@ function AProposPage() {
                 Monique Roon
               </h1>
               <p className="text-2xl font-display italic text-purple mb-8">
-                "Accoucheuse d'artistes"
+                Art-thérapeute passionnée
               </p>
               <p className="text-[22px] text-warm-gray leading-relaxed">
-                Art-thérapeute passionnée, j'accompagne les personnes en difficulté
-                sur le chemin de la transformation par la création artistique.
+                j'offre un espace où l'on peut s'exprimer autrement que par les mots, retrouver du plaisir, explorer ses ressources et parfois renouer avec une part de soi devenue difficile d'accès.
               </p>
             </div>
 
@@ -48,7 +47,7 @@ function AProposPage() {
               <div className="relative organic-mask overflow-hidden">
                 <img
                   src={asset("assets/P1044865.JPG")}
-                  alt="Monique Roon - Art-thérapeute"
+                  alt="Monique Roon, art-thérapeute à Fribourg"
                   className="w-full h-auto object-cover aspect-square"
                 />
               </div>
@@ -222,6 +221,7 @@ function AProposPage() {
               Ensemble, nous utilisons les outils artistiques comme pont vers
               votre monde intérieur. Pas besoin de talent artistique —
               seule compte votre envie d'explorer et de vous exprimer.
+              Cet accompagnement créatif s'adresse aux adultes comme aux enfants.
             </p>
           </div>
         </div>
@@ -241,21 +241,21 @@ function AProposPage() {
             <div className="rounded-2xl overflow-hidden aspect-square">
               <img
                 src={asset("assets/P1044847.JPG")}
-                alt="L'atelier"
+                alt="L'atelier d'art-thérapie Créart-Thérapie à Lully"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-square">
               <img
                 src={asset("assets/P1055567.jpg")}
-                alt="Matériel artistique"
+                alt="Matériel artistique de l'atelier d'expression créative"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="rounded-2xl overflow-hidden aspect-square col-span-2 lg:col-span-1">
               <img
                 src={asset("assets/pinceau-fond-presentation.jpeg")}
-                alt="Pinceaux"
+                alt="Pinceaux et peinture à l'atelier d'art-thérapie"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>

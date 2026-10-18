@@ -24,6 +24,7 @@ export default function Footer() {
             <p className="text-paper-cream/70 max-w-md leading-relaxed">
               L'art-thérapie ouvre un espace où vous pourrez contacter votre enfant
               intérieur pour le laisser s'exprimer et libérer son potentiel créatif.
+              Accompagnement créatif pour adultes et enfants à Fribourg.
             </p>
             <div className="mt-6 inline-block px-4 py-2 bg-cyan/20 rounded-full">
               <span className="text-sm font-medium text-cyan-light">
@@ -79,7 +80,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-paper-cream/70">
                 <MapPin className="w-5 h-5 text-cyan flex-shrink-0 mt-0.5" />
-                <span>Région de Fribourg<br />Suisse</span>
+                <span>Route de la Cure 3<br />1470 Lully (FR), Suisse</span>
               </li>
             </ul>
           </div>

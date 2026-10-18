@@ -9,7 +9,7 @@ export const Route = createFileRoute("/prestations")({
     seo({
       title: "Prestations & tarifs | Atelier Créart-Thérapie",
       description:
-        "Séances individuelles d'art-thérapie (120 CHF / 75 min), ateliers de groupe de pointillisme (50 CHF), séance d'essai à 90 CHF. Agréée ASCA, à Fribourg.",
+        "Séances d'art-thérapie adulte (120 CHF/75 min), ateliers de groupe (50 CHF), art-thérapie enfant en école. Accompagnement créatif handicap — ASCA, Fribourg.",
       path: "/prestations",
     }),
 });
@@ -52,11 +52,12 @@ function PrestationsPage() {
                 <Heart className="w-10 h-10 text-cyan" />
               </div>
 
-              <h3 className="text-2xl mb-4">Séances Individuelles</h3>
+              <h2 className="text-2xl mb-4">Séances Individuelles</h2>
 
               <p className="text-warm-gray leading-relaxed mb-6">
-                Accompagnement individuel des adultes lors de périodes difficiles
-                de leur vie. Un espace rien qu'à vous pour explorer vos émotions
+                Atelier d'art-thérapie pour adultes : accompagnement individuel
+                lors de périodes difficiles de la vie (dépression, deuil, burn-out,
+                maladie). Un espace rien qu'à vous pour explorer vos émotions
                 en toute confidentialité.
               </p>
 
@@ -99,12 +100,12 @@ function PrestationsPage() {
                 <Users className="w-10 h-10 text-magenta" />
               </div>
 
-              <h3 className="text-2xl mb-4">Ateliers de Groupe</h3>
+              <h2 className="text-2xl mb-4">Ateliers de Groupe</h2>
 
               <p className="text-warm-gray leading-relaxed mb-6">
                 Je propose chaque semaine un atelier de pointillisme, en groupe.
-                Une expérience créative partagée dans une ambiance conviviale
-                et bienveillante.
+                Un atelier d'expression créative partagé dans une ambiance
+                conviviale et bienveillante.
               </p>
 
               <div className="border-t border-border pt-6 mb-6">
@@ -146,11 +147,13 @@ function PrestationsPage() {
                 <Building className="w-10 h-10 text-purple" />
               </div>
 
-              <h3 className="text-2xl mb-4">Institutions & Écoles</h3>
+              <h2 className="text-2xl mb-4">Institutions & Écoles</h2>
 
               <p className="text-warm-gray leading-relaxed mb-6">
-                Soutien spécialisé pour les personnes atteintes de maladies
-                auto-immunes, résidents en EMS, et élèves en établissements scolaires.
+                Ateliers d'art-thérapie pour enfants en milieu scolaire (handicap,
+                TDA, TSA), résidents en EMS et personnes atteintes de maladies
+                auto-immunes. Un accompagnement créatif adapté à chaque situation
+                de handicap.
               </p>
 
               <div className="border-t border-border pt-6 mb-6">
@@ -166,9 +169,9 @@ function PrestationsPage() {
               <ul className="space-y-3 mb-8">
                 {[
                   "Interventions en EMS",
-                  "Ateliers scolaires",
-                  "Maladies auto-immunes",
-                  "Programme adapté",
+                  "Ateliers art-thérapie enfant en école",
+                  "Sclérose en plaques, Parkinson",
+                  "Accompagnement créatif handicap",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-purple flex-shrink-0 mt-0.5" />

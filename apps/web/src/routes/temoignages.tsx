@@ -7,9 +7,9 @@ export const Route = createFileRoute("/temoignages")({
   component: TemoignagesPage,
   head: () =>
     seo({
-      title: "Témoignages | Atelier Créart-Thérapie",
+      title: "Témoignages art-thérapie | Atelier Créart-Thérapie",
       description:
-        "Ils ont retrouvé joie de vivre et créativité grâce à l'art-thérapie. Découvrez les témoignages des personnes accompagnées par Monique Roon à Fribourg.",
+        "Ils ont traversé dépression, burn-out ou deuil grâce à l'art-thérapie. Découvrez les témoignages des personnes accompagnées par Monique Roon à Fribourg.",
       path: "/temoignages",
     }),
 });

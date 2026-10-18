@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
     seo({
       title: "Atelier Créart-Thérapie | Art-thérapie à Fribourg",
       description:
-        "Atelier d'art-thérapie à Fribourg : séances individuelles et ateliers de groupe avec Monique Roon, art-thérapeute agréée ASCA. Séance d'essai 90 CHF.",
+        "Art-thérapie à Fribourg pour adultes et enfants : dépression, cancer, handicap, TDA/TSA. Séances & ateliers de groupe — art-thérapeute ASCA. Essai 90 CHF.",
       path: "/",
     }),
 });
@@ -30,14 +30,15 @@ function HomePage() {
             <div className="animate-fade-in-up">
               <h1 className="text-balance mb-6">
                 <span className="block">Cultive ta créativité</span>
-                <span className="block">et transforme ton</span>
-                <span className="paint-underline">quotidien</span>
+                <span className="block">pour ouvrir l'espace</span>
+                <span className="paint-underline">des possibles</span>
                 <span>.</span>
               </h1>
               <p className="text-lg md:text-xl text-warm-gray leading-relaxed mb-8 max-w-xl">
                 L'art-thérapie ouvre un espace, un lieu, où vous pourrez contacter
                 votre enfant intérieur pour le laisser s'exprimer et libérer son
-                potentiel créatif.
+                potentiel créatif. À Fribourg, j'accueille adultes et enfants pour
+                un accompagnement créatif qui favorise l'expression émotionnelle.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/art-therapie" className="btn-artistic inline-flex items-center gap-2">
@@ -121,6 +122,7 @@ function HomePage() {
                 controls
                 preload="none"
                 className="w-full aspect-video object-cover"
+                aria-label="Démonstration d'une séance d'art-thérapie à l'atelier Créart-Thérapie"
               >
                 <source src={asset("assets/creart-therapie-demo-seance.webm")} type="video/webm" />
                 <source src={asset("assets/creart-therapie-demo-seance.mp4")} type="video/mp4" />

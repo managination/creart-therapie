@@ -40,8 +40,9 @@
     {
       "@context": "https://schema.org",
       "@type": "HealthAndBeautyBusiness",
+      "@id": "https://creart-therapie.ch/#atelier",
       "name": "Atelier Créart-Thérapie",
-      "description": "Atelier d'art-thérapie à Fribourg : séances individuelles et ateliers de groupe pour adultes et enfants. Art-thérapeute agréée ASCA, remboursée par les assurances complémentaires.",
+      "description": "Atelier d'art-thérapie à Lully (canton de Fribourg) : séances individuelles pour adultes, ateliers de groupe et ateliers d'art-thérapie pour enfants. Accompagnement créatif en cas de dépression, cancer, sclérose en plaques, maladie de Parkinson, TDA, TSA, autisme ou handicap. Art-thérapeute agréée ASCA, séances remboursées par les assurances complémentaires.",
       "url": "https://creart-therapie.ch/",
       "logo": "https://creart-therapie.ch/assets/Logo_VF2.jpeg",
       "image": "https://creart-therapie.ch/assets/og-image.jpg",
@@ -51,6 +52,9 @@
       "currenciesAccepted": "CHF",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Route de la Cure 3",
+        "postalCode": "1470",
+        "addressLocality": "Lully",
         "addressRegion": "Fribourg",
         "addressCountry": "CH"
       },
@@ -61,7 +65,71 @@
       "founder": {
         "@type": "Person",
         "name": "Monique Roon",
-        "jobTitle": "Art-thérapeute"
+        "jobTitle": "Art-thérapeute",
+        "knowsLanguage": ["fr"],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Agrément ASCA en art-thérapie"
+        },
+        "knowsAbout": [
+          "art-thérapie",
+          "atelier d'expression créative",
+          "accompagnement créatif",
+          "expression émotionnelle",
+          "dépression",
+          "cancer",
+          "sclérose en plaques",
+          "maladie de Parkinson",
+          "TDA",
+          "TSA",
+          "autisme",
+          "handicap"
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Prestations d'art-thérapie",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "120",
+              "priceCurrency": "CHF"
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Séance individuelle d'art-thérapie pour adulte",
+              "description": "Accompagnement créatif individuel de 75 minutes pour adultes : dépression, deuil, burn-out, maladie."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "90",
+              "priceCurrency": "CHF"
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Séance d'essai d'art-thérapie",
+              "description": "Première séance découverte de 75 minutes à tarif réduit, sans engagement."
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "50",
+              "priceCurrency": "CHF"
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Atelier de groupe d'expression créative",
+              "description": "Atelier de pointillisme en groupe de 120 minutes, matériel fourni."
+            }
+          }
+        ]
       }
     }
     </script>

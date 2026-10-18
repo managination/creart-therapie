@@ -10,7 +10,7 @@ export const Route = createFileRoute("/art-therapie")({
     seo({
       title: "Qu'est-ce que l'art-thérapie ? | Atelier Créart-Thérapie",
       description:
-        "L'art-thérapie aide à traverser deuil, maladie, burn-out ou perte de sens par la création. Découvrez cette approche douce avec Monique Roon à Fribourg.",
+        "L'art-thérapie accompagne dépression, deuil, cancer, sclérose en plaques, Parkinson, TDA et autisme par l'expression créative — adultes et enfants, Fribourg.",
       path: "/art-therapie",
     }),
 });
@@ -32,14 +32,14 @@ const helpItems = [
       "Vous aurez l'occasion de poser un autre regard sur cette maladie et de la traverser autrement.",
   },
   {
-    title: "Vous souffrez d'une maladie auto immune, SEP, maladie de parkinson...",
+    title: "Vous souffrez d'une maladie auto-immune, d'une sclérose en plaques (SEP), de la maladie de Parkinson...",
     description:
       "La créativité vous permettra d'ouvrir le champ des possibles, de mettre en place un mouvement différent, grâce à l'imaginaire.",
   },
   {
-    title: "Votre enfant souffre d'un handicap, TDA, TSA...",
+    title: "Votre enfant vit avec un handicap, un TDA (trouble du déficit de l'attention), un TSA (autisme)...",
     description:
-      "Je peux l'accompagner en lui créant un cadre sécurisant, une bulle d'oxygène dans laquelle il pourra libérer sa créativité. J'ai mis en place diverses créations qui ne demandent que quelques minutes et qui ont des résultats surprenants et valorisants.",
+      "Dans mon atelier d'art-thérapie pour enfants, je lui propose un accompagnement créatif adapté : un cadre sécurisant, une bulle d'oxygène dans laquelle il pourra libérer sa créativité. J'ai mis en place diverses créations qui ne demandent que quelques minutes et qui ont des résultats surprenants et valorisants.",
   },
   {
     title: "Vous souhaitez renouer avec votre créativité",
@@ -66,8 +66,8 @@ function ArtTherapiePage() {
               <div className="absolute -inset-4 bg-gradient-to-br from-magenta/20 via-cyan/10 to-yellow/20 rounded-[3rem] blur-2xl" />
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                 <img
-                  src={asset("assets/P1044871.JPG")}
-                  alt="Mains créant une oeuvre d'art"
+                  src={asset("assets/pointillisme-main.png")}
+                  alt="Atelier d'art-thérapie : main peignant une œuvre en pointillisme"
                   className="w-full h-auto object-cover aspect-[4/3]"
                 />
               </div>
@@ -93,8 +93,9 @@ function ArtTherapiePage() {
                 un deuil, une séparation, un événement douloureux, une remise en question...
               </p>
               <p className="text-lg text-warm-gray leading-relaxed">
-                Crayons, pinceaux, craies, argile, papier... favorisent l'expression
-                et ravivent l'élan créatif inné.
+                Crayons, pinceaux, craies, argile, papier... : cet atelier
+                d'expression créative favorise l'expression émotionnelle et ravive
+                l'élan créatif inné.
               </p>
             </div>
           </div>
@@ -181,7 +182,7 @@ function ArtTherapiePage() {
               <div className="w-20 h-20 mx-auto bg-cyan/10 rounded-full flex items-center justify-center mb-6">
                 <Palette className="w-10 h-10 text-cyan" />
               </div>
-              <h4 className="text-lg font-display font-semibold mb-3">Expression</h4>
+              <h3 className="text-lg font-display font-semibold mb-3">Expression</h3>
               <p className="text-warm-gray">
                 Libérez vos émotions à travers la création artistique sans jugement
               </p>
@@ -191,7 +192,7 @@ function ArtTherapiePage() {
               <div className="w-20 h-20 mx-auto bg-magenta/10 rounded-full flex items-center justify-center mb-6">
                 <Brain className="w-10 h-10 text-magenta" />
               </div>
-              <h4 className="text-lg font-display font-semibold mb-3">Conscience</h4>
+              <h3 className="text-lg font-display font-semibold mb-3">Conscience</h3>
               <p className="text-warm-gray">
                 Prenez conscience de vos ressources intérieures et de votre potentiel
               </p>
@@ -201,7 +202,7 @@ function ArtTherapiePage() {
               <div className="w-20 h-20 mx-auto bg-yellow/20 rounded-full flex items-center justify-center mb-6">
                 <Heart className="w-10 h-10 text-yellow-dark" />
               </div>
-              <h4 className="text-lg font-display font-semibold mb-3">Bienveillance</h4>
+              <h3 className="text-lg font-display font-semibold mb-3">Bienveillance</h3>
               <p className="text-warm-gray">
                 Un espace sécurisant et non-jugeant pour vous accompagner
               </p>
@@ -211,7 +212,7 @@ function ArtTherapiePage() {
               <div className="w-20 h-20 mx-auto bg-purple/10 rounded-full flex items-center justify-center mb-6">
                 <Leaf className="w-10 h-10 text-purple" />
               </div>
-              <h4 className="text-lg font-display font-semibold mb-3">Transformation</h4>
+              <h3 className="text-lg font-display font-semibold mb-3">Transformation</h3>
               <p className="text-warm-gray">
                 Transformez votre regard sur les difficultés de la vie
               </p>
@@ -229,7 +230,7 @@ function ArtTherapiePage() {
             <div className="relative">
               <img
                 src={asset("assets/C.G.Jung_citation.jpeg")}
-                alt="Citation de C.G. Jung"
+                alt="Citation de C.G. Jung sur la création et l'instinct du jeu"
                 className="rounded-2xl shadow-xl w-full"
               />
             </div>
@@ -260,15 +261,15 @@ function ArtTherapiePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: "Peinture", image: asset("assets/91c512c2d597763ae30ffcc3657c22a4.jpg") },
-              { name: "Dessin", image: asset("assets/8068fb5a6ec757a39e1b7ea2ffeb3ebc.jpg") },
-              { name: "Modelage", image: asset("assets/P1055567.jpg") },
-              { name: "Collage", image: asset("assets/bb9807761db53c168f50e82010f77a18.jpg") },
+              { name: "Peinture", image: asset("assets/20230929_150253.jpg"), alt: "Peinture en atelier d'art-thérapie" },
+              { name: "Dessin", image: asset("assets/IMG_20210508_112953.jpg"), alt: "Dessin et expression émotionnelle" },
+              { name: "Modelage", image: asset("assets/20240205_173018.jpg"), alt: "Modelage d'argile en séance d'art-thérapie" },
+              { name: "Collage", image: asset("assets/IMG_5789.png"), alt: "Collage créatif en atelier d'expression" },
             ].map((tool, index) => (
               <div key={index} className="group relative overflow-hidden rounded-2xl aspect-square">
                 <img
                   src={tool.image}
-                  alt={tool.name}
+                  alt={tool.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />

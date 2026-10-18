@@ -21,7 +21,7 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
       },
       {
         name: "description",
-        content: "Atelier d'art-thérapie à Fribourg : séances individuelles et ateliers de groupe avec Monique Roon, art-thérapeute agréée ASCA. Séance d'essai 90 CHF.",
+        content: "Art-thérapie à Fribourg pour adultes et enfants : dépression, cancer, handicap, TDA/TSA. Séances & ateliers de groupe — art-thérapeute ASCA. Essai 90 CHF.",
       },
     ],
   }),

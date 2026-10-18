@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
     seo({
       title: "Contact & rendez-vous | Atelier Créart-Thérapie",
       description:
-        "Réservez votre séance d'essai d'art-thérapie à Fribourg (90 CHF). Contactez Monique Roon par email ou téléphone, du lundi au vendredi sur rendez-vous.",
+        "Réservez votre séance d'art-thérapie à Lully, près de Fribourg : 90 CHF la séance d'essai. Contactez Monique Roon par email ou téléphone, sur rendez-vous.",
       path: "/contact",
     }),
 });
@@ -137,7 +137,7 @@ function ContactPage() {
                   </div>
                   <div>
                     <p className="font-medium text-charcoal">Localisation</p>
-                    <p className="text-warm-gray">Région de Fribourg, Suisse</p>
+                    <p className="text-warm-gray">Route de la Cure 3, 1470 Lully (FR), Suisse</p>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@ function ContactPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="bg-cyan/5 rounded-2xl p-6">
                   <Clock className="w-8 h-8 text-cyan mb-4" />
-                  <h4 className="font-display text-lg mb-2">Horaires</h4>
+                  <h3 className="font-display text-lg mb-2">Horaires</h3>
                   <p className="text-sm text-warm-gray">
                     Sur rendez-vous<br />
                     Du lundi au vendredi
@@ -155,7 +155,7 @@ function ContactPage() {
 
                 <div className="bg-magenta/5 rounded-2xl p-6">
                   <Sparkles className="w-8 h-8 text-magenta mb-4" />
-                  <h4 className="font-display text-lg mb-2">Séance d'essai</h4>
+                  <h3 className="font-display text-lg mb-2">Séance d'essai</h3>
                   <p className="text-sm text-warm-gray">
                     90 CHF (au lieu de 120)<br />
                     75 minutes
