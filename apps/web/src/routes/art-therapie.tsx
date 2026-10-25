@@ -80,7 +80,7 @@ function ArtTherapiePage() {
             </div>
 
             {/* Content */}
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-2 bg-white rounded-3xl p-8 shadow-lg">
               <span className="font-handwritten text-2xl text-cyan mb-4 block">
                 L'Art-Thérapie
               </span>
@@ -92,13 +92,46 @@ function ArtTherapiePage() {
                 différent sur une situation qui vous préoccupe, que ce soit une maladie,
                 un deuil, une séparation, un événement douloureux, une remise en question...
               </p>
-              <p className="text-lg text-warm-gray leading-relaxed">
-                Crayons, pinceaux, craies, argile, papier... : cet atelier
-                d'expression créative favorise l'expression émotionnelle et ravive
-                l'élan créatif inné.
-              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Podcast Interview Section */}
+      <section id="podcast" className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <span className="font-handwritten text-3xl text-cyan mb-4 block">
+              Podcast
+            </span>
+            <h3>Interview de Monique Roon qui parle de l'art-thérapie, de son parcours et de sa pratique</h3>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-r from-cyan/20 via-purple/20 to-magenta/20 rounded-3xl blur-xl" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <video
+                src={asset("assets/Podcast_Youtube_Monique_Roon_Art_Therapie_1.webm")}
+                poster={asset("assets/Logo_VF2.jpeg")}
+                controls
+                preload="none"
+                className="w-full aspect-video object-cover"
+                aria-label="Interview de Monique Roon sur l'art-thérapie"
+              />
+            </div>
+          </div>
+
+          <p className="mt-6 text-center text-warm-gray">
+            Podcast réalisé par Yasmina{" "}
+            <a
+              href="https://YSA-communication.ch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan hover:text-cyan-dark underline"
+            >
+              https://YSA-communication.ch
+            </a>
+          </p>
         </div>
       </section>
 
@@ -109,7 +142,7 @@ function ArtTherapiePage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="font-handwritten text-2xl text-cyan mb-4 block">
+            <span className="font-handwritten text-3xl text-cyan mb-4 block">
               Pour qui ?
             </span>
             <h2>L'art-thérapie peut vous aider si...</h2>

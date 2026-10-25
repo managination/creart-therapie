@@ -19,27 +19,29 @@ function HomePage() {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center">
-        {/* Decorative blobs */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-cyan/10 blob" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-magenta/10 blob-alt" />
-        <div className="absolute top-1/2 right-1/4 w-40 h-40 bg-yellow/10 blob float-delayed" />
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Text Content */}
-            <div className="animate-fade-in-up">
+            <div id="presentation" className="animate-fade-in-up bg-white rounded-3xl p-8">
               <h1 className="text-balance mb-6">
-                <span className="block">Cultive ta créativité</span>
-                <span className="block">pour ouvrir l'espace</span>
+                <span className="block">Ouvrir l'espace</span>
                 <span className="paint-underline">des possibles</span>
                 <span>.</span>
               </h1>
               <p className="text-lg md:text-xl text-warm-gray leading-relaxed mb-8 max-w-xl">
-                L'art-thérapie ouvre un espace, un lieu, où vous pourrez contacter
-                votre enfant intérieur pour le laisser s'exprimer et libérer son
-                potentiel créatif. À Fribourg, j'accueille adultes et enfants pour
-                un accompagnement créatif qui favorise l'expression émotionnelle.
+                Art-thérapeute passionnée, je vous propose, dans mon atelier à Lully FR, un espace bienveillant et sécurisant pour vous permettre de vous exprimer à l’aide de la créativité.
               </p>
+              <p className="text-lg md:text-xl text-warm-gray leading-relaxed mb-8 max-w-xl">
+                En représentant la situation qui vous préoccupe, la maladie qui vous touche, le deuil que vous traversez, les remises en questions qui vous préoccupent, vous vous permettez d’y poser un autre regard, de le transformer, de découvrir vos ressources, d’être le créateur de votre vie.
+              </p>
+              <blockquote className="relative border-l-4 border-magenta pl-5 mb-8 max-w-xl">
+                <p className="text-lg md:text-xl font-display italic text-charcoal leading-relaxed">
+                  Tout peut être transformé pour opérer une transformation en vous.
+                </p>
+                <footer className="mt-2 font-medium text-warm-gray">
+                  — Monique Roon
+                </footer>
+              </blockquote>
               <div className="flex flex-wrap gap-4">
                 <Link to="/art-therapie" className="btn-artistic inline-flex items-center gap-2">
                   Découvrir l'atelier
@@ -69,24 +71,32 @@ function HomePage() {
             <div className="relative animate-fade-in animation-delay-200">
               <div className="relative">
                 {/* Background decoration */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-cyan/20 via-magenta/10 to-yellow/20 rounded-[3rem] blur-2xl" />
+                <div className="absolute -inset-4 bg-gradient-to-br from-cyan/20 via-magenta/10 to-yellow/20 rounded-[3rem] blur-2xl pointer-events-none" />
 
                 {/* Main image */}
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img
-                    src={asset("assets/P1055584.jpg")}
-                    alt="Séance d'art-thérapie - création artistique"
-                    className="w-full h-auto object-cover aspect-[4/5]"
-                    fetchPriority="high"
-                    decoding="async"
+                  <video
+                    src={asset("assets/short_Monique-Roon_Art_Therapie_1.webm")}
+                    poster={asset("assets/Logo_VF2.jpeg")}
+                    className="w-full h-auto object-cover aspect-video"
+                    loop
+                    playsInline
+                    controls
                   />
                   {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent pointer-events-none" />
                 </div>
 
-                {/* Floating accent */}
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-yellow rounded-full opacity-80 blur-sm" />
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-magenta rounded-full opacity-60 blur-sm" />
+                <p className="relative mt-4 text-warm-gray text-center">
+                  Pour la version longue du pod-cast,{" "}
+                  <Link
+                    to="/art-therapie"
+                    hash="podcast"
+                    className="text-cyan hover:text-cyan-dark underline"
+                  >
+                    cliquez ici
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

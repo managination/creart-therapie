@@ -92,9 +92,6 @@ export default function Footer() {
             <p className="text-paper-cream/50 text-sm">
               © {new Date().getFullYear()} Atelier Créart-Thérapie. Tous droits réservés.
             </p>
-            <p className="text-paper-cream/50 text-sm font-handwritten">
-              "Accoucheuse d'artistes"
-            </p>
           </div>
         </div>
       </div>

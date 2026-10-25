@@ -24,9 +24,9 @@ function AProposPage() {
         <div className="absolute bottom-10 left-10 w-64 h-64 bg-cyan/10 blob-alt" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div id="a-propos-intro" className="grid lg:grid-cols-2 gap-16 items-center rounded-3xl p-8">
             {/* Content */}
-            <div>
+            <div className="bg-white rounded-3xl p-8">
               <span className="font-handwritten text-2xl text-magenta mb-4 block">
                 À propos
               </span>
@@ -44,11 +44,11 @@ function AProposPage() {
             {/* Image */}
             <div className="relative">
               <div className="absolute -inset-6 bg-gradient-to-br from-cyan/20 via-magenta/10 to-purple/20 rounded-full blur-3xl" />
-              <div className="relative organic-mask overflow-hidden">
+              <div id="portrait-monique" className="relative">
                 <img
-                  src={asset("assets/P1044865.JPG")}
+                  src={asset("assets/portrait-interview.png")}
                   alt="Monique Roon, art-thérapeute à Fribourg"
-                  className="w-full h-auto object-cover aspect-square"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
