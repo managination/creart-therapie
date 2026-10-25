@@ -81,7 +81,7 @@ function ArtTherapiePage() {
 
             {/* Content */}
             <div className="order-1 lg:order-2 bg-white rounded-3xl p-8 shadow-lg">
-              <span className="font-handwritten text-2xl text-cyan mb-4 block">
+              <span className="font-handwritten text-3xl text-cyan mb-4 block">
                 L'Art-Thérapie
               </span>
               <h1 className="mb-6">
@@ -199,7 +199,7 @@ function ArtTherapiePage() {
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="font-handwritten text-2xl text-cyan mb-4 block">
+            <span className="font-handwritten text-3xl text-cyan mb-4 block">
               Atelier créatif de groupe
             </span>
             <h2>Créer ensemble, dans un cadre bienveillant</h2>
@@ -229,7 +229,7 @@ function ArtTherapiePage() {
       <section className="py-24 bg-paper-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="font-handwritten text-2xl text-magenta mb-4 block">
+            <span className="font-handwritten text-3xl text-magenta mb-4 block">
               Ma philosophie
             </span>
             <h2>Le processus, pas le résultat</h2>
@@ -316,7 +316,7 @@ function ArtTherapiePage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="font-handwritten text-2xl text-magenta mb-4 block">
+            <span className="font-handwritten text-3xl text-magenta mb-4 block">
               Les outils
             </span>
             <h2>Médiums artistiques</h2>

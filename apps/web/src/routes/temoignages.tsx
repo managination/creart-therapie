@@ -82,7 +82,7 @@ function TemoignagesPage() {
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="font-handwritten text-2xl text-purple mb-4 block">
+          <span className="font-handwritten text-3xl text-purple mb-4 block">
             Témoignages
           </span>
           <h1 className="mb-6">
@@ -150,8 +150,8 @@ function TemoignagesPage() {
             </div>
 
             {/* Content */}
-            <div>
-              <span className="font-handwritten text-2xl text-cyan mb-4 block">
+            <div className="bg-white rounded-3xl p-8">
+              <span className="font-handwritten text-3xl text-cyan mb-4 block">
                 L'expérience
               </span>
               <h2 className="mb-6">Plus qu'une thérapie, un voyage</h2>

@@ -27,7 +27,7 @@ function AProposPage() {
           <div id="a-propos-intro" className="grid lg:grid-cols-2 gap-16 items-center rounded-3xl p-8">
             {/* Content */}
             <div className="bg-white rounded-3xl p-8">
-              <span className="font-handwritten text-2xl text-magenta mb-4 block">
+              <span className="font-handwritten text-3xl text-magenta mb-4 block">
                 À propos
               </span>
               <h1 className="mb-6">
@@ -205,7 +205,7 @@ function AProposPage() {
       <section className="py-24 bg-gradient-to-br from-cyan/5 via-transparent to-magenta/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="font-handwritten text-2xl text-cyan mb-4 block">
+            <span className="font-handwritten text-3xl text-cyan mb-4 block">
               Mon approche
             </span>
             <h2>Accompagner pour reconnecter</h2>
@@ -231,7 +231,7 @@ function AProposPage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="font-handwritten text-2xl text-magenta mb-4 block">
+            <span className="font-handwritten text-3xl text-magenta mb-4 block">
               L'atelier
             </span>
             <h2>Un espace de création</h2>
@@ -254,7 +254,7 @@ function AProposPage() {
             </div>
             <div className="rounded-2xl overflow-hidden aspect-square col-span-2 lg:col-span-1">
               <img
-                src={asset("assets/pinceau-fond-presentation.jpeg")}
+                src={asset("assets/20250123_155407.jpg")}
                 alt="Pinceaux et peinture à l'atelier d'art-thérapie"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

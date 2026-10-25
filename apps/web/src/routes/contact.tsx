@@ -82,8 +82,8 @@ function ContactPage() {
           </svg>
         </div>
 
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="font-handwritten text-2xl text-cyan mb-4 block">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white rounded-3xl p-8">
+          <span className="font-handwritten text-3xl text-cyan mb-4 block">
             Contact
           </span>
           <h1 className="mb-6">

@@ -18,7 +18,7 @@ function NotFoundPage() {
   return (
     <div className="min-h-[60vh] flex items-center">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24">
-        <span className="font-handwritten text-2xl text-magenta mb-4 block">
+        <span className="font-handwritten text-3xl text-magenta mb-4 block">
           Oups…
         </span>
         <h1 className="mb-6">

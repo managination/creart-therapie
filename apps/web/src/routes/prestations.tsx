@@ -30,7 +30,7 @@ function PrestationsPage() {
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="font-handwritten text-2xl text-cyan mb-4 block">
+          <span className="font-handwritten text-3xl text-cyan mb-4 block">
             Mes prestations
           </span>
           <h1 className="mb-6">
@@ -229,7 +229,7 @@ function PrestationsPage() {
 
       {/* ASCA Section */}
       <section className="py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white rounded-3xl p-8">
           <div className="inline-flex items-center gap-3 px-6 py-3 bg-cyan/10 rounded-full mb-8">
             <Check className="w-6 h-6 text-cyan" />
             <span className="font-medium text-cyan">Agréée ASCA</span>

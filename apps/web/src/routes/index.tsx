@@ -110,7 +110,7 @@ function HomePage() {
       <section className="py-24 bg-paper-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="font-handwritten text-2xl text-magenta mb-4 block">
+            <span className="font-handwritten text-3xl text-magenta mb-4 block">
               Bienvenue
             </span>
             <h2 className="mb-6">
@@ -128,7 +128,7 @@ function HomePage() {
             <div className="absolute -inset-4 bg-gradient-to-br from-cyan/20 via-magenta/10 to-yellow/20 rounded-[3rem] blur-2xl" />
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
               <img
-                src={asset("assets/pointillisme-main.png")}
+                src={asset("assets/P1044915.JPG")}
                 alt="Atelier d'art-thérapie : main peignant une œuvre en pointillisme"
                 className="w-full h-auto object-cover aspect-[4/3]"
               />
@@ -141,7 +141,7 @@ function HomePage() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="font-handwritten text-2xl text-cyan mb-4 block">
+            <span className="font-handwritten text-3xl text-cyan mb-4 block">
               Mes prestations
             </span>
             <h2>Comment puis-je vous accompagner ?</h2>
@@ -209,7 +209,7 @@ function HomePage() {
       <section className="py-24 bg-gradient-to-br from-cyan/5 via-transparent to-magenta/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="font-handwritten text-2xl text-purple mb-4 block">
+            <span className="font-handwritten text-3xl text-purple mb-4 block">
               Témoignages
             </span>
             <h2 className="mb-12">Ce qu'ils en disent</h2>
